@@ -13,9 +13,6 @@ scoreboard players reset * temp
 scoreboard objectives add join dummy
 scoreboard players reset * join
 
-scoreboard objectives add leave minecraft.custom:minecraft.leave_game
-scoreboard players reset * leave
-
 scoreboard objectives add player_count dummy
 scoreboard players reset * player_count
 

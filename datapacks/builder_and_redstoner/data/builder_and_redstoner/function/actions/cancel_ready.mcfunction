@@ -1,1 +1,1 @@
-scoreboard players reset @s ready
+scoreboard players set @s ready 0

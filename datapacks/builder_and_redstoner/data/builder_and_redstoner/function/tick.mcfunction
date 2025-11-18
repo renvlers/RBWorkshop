@@ -22,9 +22,20 @@ execute \
         scoreboard players set @s join 1
 
 execute \
-    as @a \
-    if score @s leave matches 1.. run \
-        function builder_and_redstoner:events/on_player_rejoin
+    store result score #curr_online temp run \
+        execute if entity @a
+execute \
+    if score #curr_online temp < #online player_count run \
+        function builder_and_redstoner:events/on_player_exit
+execute \
+    if score #curr_online temp < #online player_count run \
+        scoreboard players reset * join
+execute \
+    if score #curr_online temp < #online player_count run \
+        scoreboard players set @a join 1
+execute \
+    if score #curr_online temp < #online player_count run \
+        scoreboard players operation #online player_count = #curr_online temp
 
 execute \
     if data storage builder_and_redstoner:config {config: {status: "LOBBY"}} run \
