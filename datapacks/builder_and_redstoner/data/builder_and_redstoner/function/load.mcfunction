@@ -7,4 +7,7 @@ function builder_and_redstoner:initialization/reset_player_count
 function builder_and_redstoner:initialization/load_building_themes
 function builder_and_redstoner:initialization/load_config
 
+function builder_and_redstoner:actions/update_building_turns_display
+function builder_and_redstoner:actions/update_redstone_turns_display
+
 function builder_and_redstoner:control/to_lobby

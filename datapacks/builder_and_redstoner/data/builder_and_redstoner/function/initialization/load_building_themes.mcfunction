@@ -3,10 +3,8 @@ data remove storage builder_and_redstoner:themes themes
 data merge storage builder_and_redstoner:themes { \
     themes: [ \
         "太阳", \
-        "天空", \
         "深渊", \
         "梦境", \
-        "起源", \
         "未来", \
         "遗迹", \
         "孤岛", \

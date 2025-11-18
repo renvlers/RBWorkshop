@@ -132,3 +132,18 @@ execute \
 execute \
     as @a[x=55, y=64, z=-13, dx=0, dy=0, dz=0, team=!purple] run \
         function builder_and_redstoner:actions/join_purple_team
+
+# detect menu button clicks
+execute \
+    if data entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction run \
+        function builder_and_redstoner:events/on_building_turns_button_click
+execute \
+    if data entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction run \
+        data remove entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction
+
+execute \
+    if data entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction run \
+        function builder_and_redstoner:events/on_redstone_turns_button_click
+execute \
+    if data entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction run \
+        data remove entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction
