@@ -64,12 +64,3 @@ execute \
 execute \
     if data storage builder_and_redstoner:config {config: {status: "REWARDING"}} run \
         function builder_and_redstoner:control/at_rewarding
-
-execute \
-    as @a \
-    if score @s right_check matches 1.. run \
-        function builder_and_redstoner:events/on_player_rightclick
-execute \
-    as @a \
-    if score @s right_check matches 1.. run \
-        scoreboard players reset @s right_check

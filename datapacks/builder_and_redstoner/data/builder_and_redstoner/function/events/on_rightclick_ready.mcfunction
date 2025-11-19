@@ -92,6 +92,6 @@ execute \
     ] run \
         title @s actionbar { \
             text: "【红建工坊】你必须先加入队伍才能准备", \
-            color: "#CCFF99", \
+            color: "#FF6666", \
             bold: true \
         }
