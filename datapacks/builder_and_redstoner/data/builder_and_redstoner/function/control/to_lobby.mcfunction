@@ -1,7 +1,3 @@
-execute \
-    unless data storage builder_and_redstoner:config {config: {status: "LOBBY"}} run \
-        data modify storage builder_and_redstoner:config config.status set value "LOBBY"
-
 # sidebar layout:
 # divider
 # you are at lobby
@@ -127,12 +123,24 @@ scoreboard players display numberformat * lobby_sidebar_green blank
 scoreboard players display numberformat * lobby_sidebar_blue blank
 scoreboard players display numberformat * lobby_sidebar_purple blank
 
+# clear interaction data
+data remove entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction
+data remove entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction
+data remove entity @e[tag=start_game_button, limit=1, sort=nearest] interaction
+
 spawnpoint @a 52 64 6 -90 -28
 
 tp @a 52 64 6 -90 -28
 
+clear @a
 gamemode adventure @a
 
 execute \
     as @a run \
         function builder_and_redstoner:actions/set_effects
+
+bossbar set builder_and_redstoner:current_turn visible false
+
+execute \
+    unless data storage builder_and_redstoner:config {config: {status: "LOBBY"}} run \
+        data modify storage builder_and_redstoner:config config.status set value "LOBBY"

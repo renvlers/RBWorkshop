@@ -42,6 +42,10 @@ execute \
         function builder_and_redstoner:control/at_lobby
 
 execute \
+    if data storage builder_and_redstoner:config {config: {status: "PREPARING"}} run \
+        function builder_and_redstoner:control/at_preparing
+
+execute \
     if data storage builder_and_redstoner:config {config: {status: "SELECTING"}} run \
         function builder_and_redstoner:control/at_selecting
 

@@ -26,5 +26,17 @@ execute \
         }
 
 execute \
+    if data storage builder_and_redstoner:config {config: {building_turns: 0, redstone_turns: 0}} run \
+        scoreboard players set #can_start temp 0
+
+execute \
+    if data storage builder_and_redstoner:config {config: {building_turns: 0, redstone_turns: 0}} run \
+        title @s actionbar { \
+            text: "【红建工坊】轮数必须大于零才能开始游戏，请设置有效的轮数", \
+            color: "#FF6666", \
+            bold: true \
+        }
+
+execute \
     if score #can_start temp matches 1 run \
-        function builder_and_redstoner:actions/start_game
+        function builder_and_redstoner:control/to_preparing

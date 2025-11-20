@@ -1,0 +1,1 @@
+$bossbar set builder_and_redstoner:current_turn max $(max_turns)

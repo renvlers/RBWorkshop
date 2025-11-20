@@ -1,0 +1,1 @@
+$bossbar set builder_and_redstoner:current_turn value $(current_turn)
