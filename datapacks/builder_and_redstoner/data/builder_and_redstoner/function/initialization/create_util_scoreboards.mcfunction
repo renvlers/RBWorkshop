@@ -73,3 +73,52 @@ scoreboard players reset * lobby_sidebar_purple
 
 scoreboard objectives add selection dummy
 scoreboard players reset * selection
+
+scoreboard objectives add selecting_sidebar dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar
+
+scoreboard objectives add selecting_sidebar_red dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_red
+
+scoreboard objectives add selecting_sidebar_orange dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_orange
+
+scoreboard objectives add selecting_sidebar_yellow dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_yellow
+
+scoreboard objectives add selecting_sidebar_green dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_green
+
+scoreboard objectives add selecting_sidebar_blue dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_blue
+
+scoreboard objectives add selecting_sidebar_purple dummy { \
+    text: "红建工坊", \
+    color: "#CCFF99", \
+    bold: true \
+}
+scoreboard players reset * selecting_sidebar_purple

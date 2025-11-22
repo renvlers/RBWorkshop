@@ -1,33 +1,4 @@
 # update lobby sidebar labels
-scoreboard players display name *label_divider lobby_sidebar { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_red { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_orange { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_yellow { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_green { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_blue { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider lobby_sidebar_purple { \
-    "text": "-----------------", \
-    "color": white \
-}
-
 scoreboard players display name *label_you_are_at_lobby lobby_sidebar [\ 
     { \
         text: "我的位置：", \
@@ -124,7 +95,7 @@ scoreboard players display name *label_blank0 lobby_sidebar_purple ""
 scoreboard players display name *label_building_turns lobby_sidebar [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -137,7 +108,7 @@ scoreboard players display name *label_building_turns lobby_sidebar [ \
 scoreboard players display name *label_building_turns lobby_sidebar_red [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -150,7 +121,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_red [ \
 scoreboard players display name *label_building_turns lobby_sidebar_orange [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -163,7 +134,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_orange [ \
 scoreboard players display name *label_building_turns lobby_sidebar_yellow [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -176,7 +147,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_yellow [ \
 scoreboard players display name *label_building_turns lobby_sidebar_green [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -189,7 +160,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_green [ \
 scoreboard players display name *label_building_turns lobby_sidebar_blue [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -202,7 +173,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_blue [ \
 scoreboard players display name *label_building_turns lobby_sidebar_purple [ \
     { \
         text: "建筑轮数：", \
-        color: "#237EFF", \
+        color: "green", \
         bold: true \
     }, \
     { \
@@ -216,7 +187,7 @@ scoreboard players display name *label_building_turns lobby_sidebar_purple [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -229,7 +200,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_red [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -242,7 +213,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar_red [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_orange [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -255,7 +226,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar_orange [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_yellow [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -268,7 +239,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar_yellow [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_green [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -281,7 +252,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar_green [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_blue [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -294,7 +265,7 @@ scoreboard players display name *label_redstone_turns lobby_sidebar_blue [ \
 scoreboard players display name *label_redstone_turns lobby_sidebar_purple [ \
     { \
         text: "红石轮数：", \
-        color: "#FF5733", \
+        color: "red", \
         bold: true \
     }, \
     { \
@@ -324,7 +295,9 @@ scoreboard players display name *label_online_players lobby_sidebar [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_red [ \
@@ -338,7 +311,9 @@ scoreboard players display name *label_online_players lobby_sidebar_red [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_orange [ \
@@ -352,7 +327,9 @@ scoreboard players display name *label_online_players lobby_sidebar_orange [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_yellow [ \
@@ -366,7 +343,9 @@ scoreboard players display name *label_online_players lobby_sidebar_yellow [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_green [ \
@@ -380,7 +359,9 @@ scoreboard players display name *label_online_players lobby_sidebar_green [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_blue [ \
@@ -394,7 +375,9 @@ scoreboard players display name *label_online_players lobby_sidebar_blue [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_online_players lobby_sidebar_purple [ \
@@ -408,7 +391,9 @@ scoreboard players display name *label_online_players lobby_sidebar_purple [ \
         score: { \
             name: "#online", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#78CCAE", \
+        bold: true \
     } \
 ]
 
@@ -423,7 +408,9 @@ scoreboard players display name *label_ready_players lobby_sidebar [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_red [ \
@@ -437,7 +424,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_red [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_orange [ \
@@ -451,7 +440,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_orange [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_yellow [ \
@@ -465,7 +456,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_yellow [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_green [ \
@@ -479,7 +472,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_green [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_blue [ \
@@ -493,7 +488,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_blue [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_ready_players lobby_sidebar_purple [ \
@@ -507,7 +504,9 @@ scoreboard players display name *label_ready_players lobby_sidebar_purple [ \
         score: { \
             name: "#ready", \
             objective: "player_count" \
-        } \
+        }, \
+        color: "#CEE2A2", \
+        bold: true \
     } \
 ]
 
@@ -615,7 +614,9 @@ scoreboard players display name *label_active_teams lobby_sidebar [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_red [ \
@@ -629,7 +630,9 @@ scoreboard players display name *label_active_teams lobby_sidebar_red [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_orange [ \
@@ -643,7 +646,9 @@ scoreboard players display name *label_active_teams lobby_sidebar_orange [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_yellow [ \
@@ -657,7 +662,9 @@ scoreboard players display name *label_active_teams lobby_sidebar_yellow [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_green [ \
@@ -671,7 +678,9 @@ scoreboard players display name *label_active_teams lobby_sidebar_green [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_blue [ \
@@ -685,7 +694,9 @@ scoreboard players display name *label_active_teams lobby_sidebar_blue [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
 scoreboard players display name *label_active_teams lobby_sidebar_purple [ \
@@ -699,35 +710,8 @@ scoreboard players display name *label_active_teams lobby_sidebar_purple [ \
         score: { \
             name: "#active_teams", \
             objective: "temp" \
-        } \
+        }, \
+        color: "#A3A0EC", \
+        bold: true \
     } \
 ]
-
-scoreboard players display name *label_divider_bottom lobby_sidebar { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_red { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_orange { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_yellow { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_green { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_blue { \
-    "text": "-----------------", \
-    "color": white \
-}
-scoreboard players display name *label_divider_bottom lobby_sidebar_purple { \
-    "text": "-----------------", \
-    "color": white \
-}

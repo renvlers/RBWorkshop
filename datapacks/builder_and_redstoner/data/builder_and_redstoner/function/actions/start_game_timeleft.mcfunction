@@ -9,7 +9,11 @@ execute \
 execute \
     if score #start_timeleft temp matches 4..5 run \
         title @a subtitle [ \
-            "游戏将在 ", \
+            { \
+                text: "游戏将在 ", \
+                color: "white", \
+                bold: true \
+            }, \
             { \
                 type: "score", \
                 score: { \
@@ -19,12 +23,20 @@ execute \
                 color: "green", \
                 bold: true \
             }, \
-            " 秒后开始" \
+            { \
+                text: " 秒后开始", \
+                color: "white", \
+                bold: true \
+            } \
         ]
 execute \
     if score #start_timeleft temp matches 1..3 run \
         title @a subtitle [ \
-            "游戏将在 ", \
+            { \
+                text: "游戏将在 ", \
+                color: "white", \
+                bold: true \
+            }, \
             { \
                 type: "score", \
                 score: { \
@@ -34,7 +46,11 @@ execute \
                 color: "red", \
                 bold: true \
             }, \
-            " 秒后开始" \
+            { \
+                text: " 秒后开始", \
+                color: "white", \
+                bold: true \
+            } \
         ]
 
 title @a title { \

@@ -4,7 +4,6 @@ execute \
 
 execute \
     unless entity @e[tag=memory_entity] run \
-        summon minecraft:interaction 0 0 0 { \
-            Tags: ["memory_entity"], \
-            NoGravity: true \
+        summon minecraft:marker 0 0 0 { \
+            Tags: ["memory_entity"] \
         }

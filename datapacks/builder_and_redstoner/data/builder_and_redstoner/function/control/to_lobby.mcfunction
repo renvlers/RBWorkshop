@@ -1,5 +1,4 @@
 # sidebar layout:
-# divider
 # you are at lobby
 # blank line
 # turns of building
@@ -10,7 +9,6 @@
 # blank line
 # my team
 # number of active teams
-# divider
 scoreboard objectives setdisplay sidebar lobby_sidebar
 scoreboard objectives setdisplay sidebar.team.red lobby_sidebar_red
 scoreboard objectives setdisplay sidebar.team.gold lobby_sidebar_orange
@@ -18,14 +16,6 @@ scoreboard objectives setdisplay sidebar.team.yellow lobby_sidebar_yellow
 scoreboard objectives setdisplay sidebar.team.green lobby_sidebar_green
 scoreboard objectives setdisplay sidebar.team.blue lobby_sidebar_blue
 scoreboard objectives setdisplay sidebar.team.dark_purple lobby_sidebar_purple
-
-scoreboard players set *label_divider lobby_sidebar 11
-scoreboard players set *label_divider lobby_sidebar_red 11
-scoreboard players set *label_divider lobby_sidebar_orange 11
-scoreboard players set *label_divider lobby_sidebar_yellow 11
-scoreboard players set *label_divider lobby_sidebar_green 11
-scoreboard players set *label_divider lobby_sidebar_blue 11
-scoreboard players set *label_divider lobby_sidebar_purple 11
 
 scoreboard players set *label_you_are_at_lobby lobby_sidebar 10
 scoreboard players set *label_you_are_at_lobby lobby_sidebar_red 10
@@ -107,21 +97,85 @@ scoreboard players set *label_active_teams lobby_sidebar_green 1
 scoreboard players set *label_active_teams lobby_sidebar_blue 1
 scoreboard players set *label_active_teams lobby_sidebar_purple 1
 
-scoreboard players set *label_divider_bottom lobby_sidebar 0
-scoreboard players set *label_divider_bottom lobby_sidebar_red 0
-scoreboard players set *label_divider_bottom lobby_sidebar_orange 0
-scoreboard players set *label_divider_bottom lobby_sidebar_yellow 0
-scoreboard players set *label_divider_bottom lobby_sidebar_green 0
-scoreboard players set *label_divider_bottom lobby_sidebar_blue 0
-scoreboard players set *label_divider_bottom lobby_sidebar_purple 0
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_red blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_orange blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_green blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_blue blank
+scoreboard players display numberformat *label_you_are_at_lobby lobby_sidebar_purple blank
 
-scoreboard players display numberformat * lobby_sidebar blank
-scoreboard players display numberformat * lobby_sidebar_red blank
-scoreboard players display numberformat * lobby_sidebar_orange blank
-scoreboard players display numberformat * lobby_sidebar_yellow blank
-scoreboard players display numberformat * lobby_sidebar_green blank
-scoreboard players display numberformat * lobby_sidebar_blue blank
-scoreboard players display numberformat * lobby_sidebar_purple blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_red blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_orange blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_green blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_blue blank
+scoreboard players display numberformat *label_blank0 lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_building_turns lobby_sidebar blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_red blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_orange blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_green blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_blue blank
+scoreboard players display numberformat *label_building_turns lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_red blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_orange blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_green blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_blue blank
+scoreboard players display numberformat *label_redstone_turns lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_blank1 lobby_sidebar blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_red blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_orange blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_green blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_blue blank
+scoreboard players display numberformat *label_blank1 lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_online_players lobby_sidebar blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_red blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_orange blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_green blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_blue blank
+scoreboard players display numberformat *label_online_players lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_ready_players lobby_sidebar blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_red blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_orange blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_green blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_blue blank
+scoreboard players display numberformat *label_ready_players lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_blank2 lobby_sidebar blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_red blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_orange blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_green blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_blue blank
+scoreboard players display numberformat *label_blank2 lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_my_team lobby_sidebar blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_red blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_orange blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_green blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_blue blank
+scoreboard players display numberformat *label_my_team lobby_sidebar_purple blank
+
+scoreboard players display numberformat *label_active_teams lobby_sidebar blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_red blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_orange blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_yellow blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_green blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_blue blank
+scoreboard players display numberformat *label_active_teams lobby_sidebar_purple blank
 
 # clear interaction data
 data remove entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction

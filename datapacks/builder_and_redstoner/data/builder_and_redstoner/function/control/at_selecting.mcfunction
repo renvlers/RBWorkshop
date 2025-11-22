@@ -8,3 +8,5 @@ execute \
     as @a \
     if score #turn_type temp matches 1 run \
         function builder_and_redstoner:actions/update_selecting_problem
+
+function builder_and_redstoner:actions/update_selecting_sidebar

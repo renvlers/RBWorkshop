@@ -63,7 +63,7 @@ execute \
             { \
                type: "nbt", \
                nbt: "data.selected_themes[0].name", \
-               entity: "@n[tag=memory_entity, type=interaction]", \
+               entity: "@n[tag=memory_entity, type=marker]", \
                color: "#CCFF99", \
                bold: true \
             } \
@@ -81,7 +81,7 @@ execute \
             { \
                type: "nbt", \
                nbt: "data.selected_themes[1].name", \
-               entity: "@n[tag=memory_entity, type=interaction]", \
+               entity: "@n[tag=memory_entity, type=marker]", \
                color: "#CCFF99", \
                bold: true \
             } \
@@ -99,7 +99,7 @@ execute \
             { \
                type: "nbt", \
                nbt: "data.selected_themes[2].name", \
-               entity: "@n[tag=memory_entity, type=interaction]", \
+               entity: "@n[tag=memory_entity, type=marker]", \
                color: "#CCFF99", \
                bold: true \
             } \
@@ -117,7 +117,7 @@ execute \
             { \
                type: "nbt", \
                nbt: "data.selected_themes[3].name", \
-               entity: "@n[tag=memory_entity, type=interaction]", \
+               entity: "@n[tag=memory_entity, type=marker]", \
                color: "#CCFF99", \
                bold: true \
             } \
@@ -135,7 +135,7 @@ execute \
             { \
                type: "nbt", \
                nbt: "data.selected_themes[4].name", \
-               entity: "@n[tag=memory_entity, type=interaction]", \
+               entity: "@n[tag=memory_entity, type=marker]", \
                color: "#CCFF99", \
                bold: true \
             } \
