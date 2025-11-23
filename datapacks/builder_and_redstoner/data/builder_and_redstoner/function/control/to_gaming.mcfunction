@@ -204,12 +204,12 @@ execute as @a[team=purple] run tp @s 10319 75 45 90 15
 # 延迟切换创造模式，确保玩家处于飞行状态
 schedule function builder_and_redstoner:actions/set_gamemode_to_creative 3t
 
+# show title
+function builder_and_redstoner:actions/show_turn_start_title with entity @n[tag=memory_entity, type=marker] data
+
 # start timing
 execute if score #turn_type temp matches 0 run function builder_and_redstoner:timers/timer_building
 execute if score #turn_type temp matches 1 run function builder_and_redstoner:timers/timer_redstone
-
-# show title
-function builder_and_redstoner:actions/show_turn_start_title with entity @n[tag=memory_entity, type=marker] data
 
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "GAMING"}} run \
