@@ -45,3 +45,41 @@ execute as @a[team=purple] at @s unless entity @s[x=10300, y=61, z=26, dx=38 , d
     bold: true \
 }
 execute as @a[team=purple] at @s unless entity @s[x=10300, y=61, z=26, dx=38 , dy=37 , dz=38] in overworld run tp @s 10319 75 45 90 15
+
+# teleport players not in overworld
+execute as @a[team=red] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=red] at @s unless dimension overworld in overworld run tp @s 10225 75 -2 90 15
+execute as @a[team=orange] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=orange] at @s unless dimension overworld in overworld run tp @s 10272 75 -2 90 15
+execute as @a[team=yellow] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=yellow] at @s unless dimension overworld in overworld run tp @s 10319 75 -2 90 15
+execute as @a[team=green] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=green] at @s unless dimension overworld in overworld run tp @s 10225 75 45 90 15
+execute as @a[team=blue] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=blue] at @s unless dimension overworld in overworld run tp @s 10272 75 45 90 15
+execute as @a[team=purple] at @s unless dimension overworld run title @s actionbar { \
+    text: "【红建工坊】请不要试图离开游戏区域", \
+    color: "red", \
+    bold: true \
+}
+execute as @a[team=purple] at @s unless dimension overworld in overworld run tp @s 10319 75 45 90 15
