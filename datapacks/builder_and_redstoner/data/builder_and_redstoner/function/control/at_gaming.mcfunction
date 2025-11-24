@@ -2,6 +2,8 @@ execute if score #turn_type temp matches 0 run scoreboard players operation #min
 execute if score #turn_type temp matches 0 run scoreboard players operation #seconds_left temp = #timer_building counter
 execute if score #turn_type temp matches 1 run scoreboard players operation #minutes_left temp = #timer_redstone counter
 execute if score #turn_type temp matches 1 run scoreboard players operation #seconds_left temp = #timer_redstone counter
+scoreboard players add #minutes_left temp 1
+scoreboard players add #seconds_left temp 1
 scoreboard players operation #minutes_left temp /= #divider temp
 scoreboard players operation #seconds_left temp %= #divider temp
 

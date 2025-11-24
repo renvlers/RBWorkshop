@@ -1,5 +1,5 @@
 function builder_and_redstoner:actions/prevent_item_drop
-execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s
+execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
 function builder_and_redstoner:actions/provide_items_for_vote
 
 execute as @a run function builder_and_redstoner:actions/check_vote_interaction_click with entity @s
@@ -34,3 +34,5 @@ execute if score #current_team temp matches 5 run function builder_and_redstoner
     team_name: "紫队", \
     team_color: "dark_purple" \
 }
+
+function builder_and_redstoner:actions/update_voting_sidebar with entity @n[tag=memory_entity, type=marker] data

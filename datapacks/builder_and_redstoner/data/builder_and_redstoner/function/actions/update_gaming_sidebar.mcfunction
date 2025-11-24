@@ -1,4 +1,3 @@
-# update lobby sidebar labels
 scoreboard players display name *label_you_are_at gaming_sidebar [\ 
     { \
         text: "我的位置：", \
@@ -707,441 +706,125 @@ $execute if score #turn_type temp matches 1 run \
         } \
     ]
 
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar [ \
-        { \
-            text: "剩余时间：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            type: "score", \
-            score: { \
-                name: "#minutes_left", \
-                objective: "temp" \
-            }, \
-            color: "green", \
-            bold: true \
-        }, \
-        { \
-            text: ":", \
-            color: "green", \
-            bold: true \
-        }, \
-        { \
-            type: "score", \
-            score: { \
-                name: "#seconds_left", \
-                objective: "temp" \
-            }, \
-            color: "green", \
-            bold: true \
-        }, \
-    ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_red [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_green [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 1.. run \
-    scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "green", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "green", \
-                bold: true \
-            }, \
-        ]
+# =========================================================
+# 第一部分：剩余时间 ≥ 10 分钟 (分钟双位数，无需补0，绿色)
+# =========================================================
 
-execute if score #minutes_left temp matches 0 run \
+# 1.1 分钟≥10, 秒数≥10 (显示 MM:SS)
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run \
     scoreboard players display name *label_time_limit gaming_sidebar [ \
-        { \
-            text: "剩余时间：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            type: "score", \
-            score: { \
-                name: "#minutes_left", \
-                objective: "temp" \
-            }, \
-            color: "red", \
-            bold: true \
-        }, \
-        { \
-            text: ":", \
-            color: "red", \
-            bold: true \
-        }, \
-        { \
-            type: "score", \
-            score: { \
-                name: "#seconds_left", \
-                objective: "temp" \
-            }, \
-            color: "red", \
-            bold: true \
-        }, \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, \
+        { text: ":", color: "green", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } \
     ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_red [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_green [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
-execute if score #minutes_left temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
-            { \
-                text: "剩余时间：", \
-                color: "#4AA7CF", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#minutes_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                text: ":", \
-                color: "red", \
-                bold: true \
-            }, \
-            { \
-                type: "score", \
-                score: { \
-                    name: "#seconds_left", \
-                    objective: "temp" \
-                }, \
-                color: "red", \
-                bold: true \
-            }, \
-        ]
+
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+
+
+# 1.2 分钟≥10, 秒数<10 (显示 MM:0S)
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run \
+    scoreboard players display name *label_time_limit gaming_sidebar [ \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, \
+        { text: ":", color: "green", bold: true }, \
+        { text: "0", color: "green", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } \
+    ]
+# (其他侧边栏重复此逻辑)
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 10.. if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+
+
+# =========================================================
+# 第二部分：剩余时间 1-9 分钟 (分钟单位数，需补0，绿色)
+# =========================================================
+
+# 2.1 分钟 1..9, 秒数≥10 (显示 0M:SS)
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run \
+    scoreboard players display name *label_time_limit gaming_sidebar [ \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { text: "0", color: "green", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, \
+        { text: ":", color: "green", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } \
+    ]
+# (其他侧边栏重复)
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+
+
+# 2.2 分钟 1..9, 秒数<10 (显示 0M:0S)
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run \
+    scoreboard players display name *label_time_limit gaming_sidebar [ \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { text: "0", color: "green", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, \
+        { text: ":", color: "green", bold: true }, \
+        { text: "0", color: "green", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } \
+    ]
+# (其他侧边栏重复)
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+execute if score #minutes_left temp matches 1..9 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "green", bold: true }, { text: ":", color: "green", bold: true }, { text: "0", color: "green", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "green", bold: true } ]
+
+
+# =========================================================
+# 第三部分：剩余时间 0 分钟 (分钟为0，需补0，红色)
+# =========================================================
+
+# 3.1 分钟 0, 秒数≥10 (显示 00:SS)
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run \
+    scoreboard players display name *label_time_limit gaming_sidebar [ \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { text: "0", color: "red", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, \
+        { text: ":", color: "red", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } \
+    ]
+# (其他侧边栏重复)
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches 10.. run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+
+
+# 3.2 分钟 0, 秒数<10 (显示 00:0S)
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run \
+    scoreboard players display name *label_time_limit gaming_sidebar [ \
+        { text: "剩余时间：", color: "#4AA7CF", bold: true }, \
+        { text: "0", color: "red", bold: true }, \
+        { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, \
+        { text: ":", color: "red", bold: true }, \
+        { text: "0", color: "red", bold: true }, \
+        { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } \
+    ]
+# (其他侧边栏重复)
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_red [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_orange [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_yellow [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_green [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_blue [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
+execute if score #minutes_left temp matches 0 if score #seconds_left temp matches ..9 run scoreboard players display name *label_time_limit gaming_sidebar_purple [ { text: "剩余时间：", color: "#4AA7CF", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#minutes_left", objective: "temp" }, color: "red", bold: true }, { text: ":", color: "red", bold: true }, { text: "0", color: "red", bold: true }, { score: { name: "#seconds_left", objective: "temp" }, color: "red", bold: true } ]
 
 scoreboard players display name *label_blank2 gaming_sidebar ""
 scoreboard players display name *label_blank2 gaming_sidebar_red ""

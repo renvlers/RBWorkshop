@@ -1,28 +1,6 @@
-execute unless score #timer_building counter matches 1..299 run scoreboard players set #timer_building counter 300
+execute unless score #timer_building counter matches 1..299 run scoreboard players set #timer_building counter 3
 
-execute if score #timer_building counter matches 4..10 run title @a actionbar [ \
-    { \
-        text: "距离比赛结束还有 ", \
-        color: "aqua", \
-        bold: true \
-    }, \
-    { \
-        type: "score", \
-        score: { \
-            name: "#timer_building", \
-            objective: "counter" \
-        }, \
-        color: "green", \
-        bold: true \
-    }, \
-    { \
-        text: " 秒", \
-        color: "aqua", \
-        bold: true \
-    }, \
-]
-
-execute if score #timer_building counter matches 1..3 run title @a actionbar [ \
+execute if score #timer_building counter matches 1..10 run title @a actionbar [ \
     { \
         text: "距离比赛结束还有 ", \
         color: "aqua", \
@@ -44,7 +22,7 @@ execute if score #timer_building counter matches 1..3 run title @a actionbar [ \
     }, \
 ]
 
-# TODO: play sound once a second during the last 10 seconds
+execute if score #timer_building counter matches 1..10 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 10000000 1
 
 scoreboard players remove #timer_building counter 1
 

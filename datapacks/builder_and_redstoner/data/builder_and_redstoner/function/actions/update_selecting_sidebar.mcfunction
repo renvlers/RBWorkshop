@@ -1,4 +1,3 @@
-# update lobby sidebar labels
 execute if score #turn_type temp matches 0 run \
     scoreboard players display name *label_you_are_at gaming_sidebar [\ 
         { \

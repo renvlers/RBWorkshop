@@ -1,4 +1,3 @@
-# update lobby sidebar labels
 scoreboard players display name *label_you_are_at_lobby lobby_sidebar [\ 
     { \
         text: "我的位置：", \

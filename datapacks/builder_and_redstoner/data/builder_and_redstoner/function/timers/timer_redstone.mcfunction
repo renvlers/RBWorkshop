@@ -1,28 +1,6 @@
 execute unless score #timer_redstone counter matches 1..599 run scoreboard players set #timer_redstone counter 600
 
-execute if score #timer_redstone counter matches 4..10 run title @a actionbar [ \
-    { \
-        text: "距离比赛结束还有 ", \
-        color: "aqua", \
-        bold: true \
-    }, \
-    { \
-        type: "score", \
-        score: { \
-            name: "#timer_redstone", \
-            objective: "counter" \
-        }, \
-        color: "green", \
-        bold: true \
-    }, \
-    { \
-        text: " 秒", \
-        color: "aqua", \
-        bold: true \
-    }, \
-]
-
-execute if score #timer_redstone counter matches 1..3 run title @a actionbar [ \
+execute if score #timer_redstone counter matches 1..10 run title @a actionbar [ \
     { \
         text: "距离比赛结束还有 ", \
         color: "aqua", \
@@ -44,7 +22,7 @@ execute if score #timer_redstone counter matches 1..3 run title @a actionbar [ \
     }, \
 ]
 
-# TODO: play sound once a second during the last 10 seconds
+execute if score #timer_redstone counter matches 1..10 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 10000000 1
 
 scoreboard players remove #timer_redstone counter 1
 

@@ -1,6 +1,8 @@
-execute as @a run function builder_and_redstoner:actions/create_click_detectors with entity @s
+playsound block.note_block.xylophone master @a ~ ~ ~ 10000000 1
+execute as @a at @s run function builder_and_redstoner:actions/create_click_detectors with entity @s
 clear @a
 
+title @a reset
 execute if score #turn_type temp matches 0 run title @a subtitle { \
     text: "即将进入投票阶段", \
     color: "aqua", \

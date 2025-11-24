@@ -1,5 +1,8 @@
 scoreboard players set #current_team temp 2
+gamemode spectator @a
 tp @a 10319 75 -2 90 15
+schedule function builder_and_redstoner:actions/set_gamemode_to_creative 3t
+title @a reset
 title @a title [ \
     { \
         text: "正在为", \

@@ -1,4 +1,4 @@
-$execute as @s[team=$(team)] run title @s actionbar [ \
+$execute as @a[team=$(team)] run title @s actionbar [ \
     { \
         text: "当前队伍：", \
         color: "#EEFFCC", \

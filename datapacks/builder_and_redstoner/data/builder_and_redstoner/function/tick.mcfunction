@@ -54,16 +54,16 @@ execute \
         function builder_and_redstoner:control/at_gaming
 
 execute \
+    if data storage builder_and_redstoner:config {config: {status: "ENDTURN"}} run \
+        function builder_and_redstoner:control/at_endturn
+
+execute \
     if data storage builder_and_redstoner:config {config: {status: "VOTING"}} run \
         function builder_and_redstoner:control/at_voting
 
 execute \
     if data storage builder_and_redstoner:config {config: {status: "TESTING"}} run \
         function builder_and_redstoner:control/at_testing
-
-execute \
-    if data storage builder_and_redstoner:config {config: {status: "ENDTURN"}} run \
-        function builder_and_redstoner:control/at_endturn
 
 execute \
     if data storage builder_and_redstoner:config {config: {status: "REWARDING"}} run \
