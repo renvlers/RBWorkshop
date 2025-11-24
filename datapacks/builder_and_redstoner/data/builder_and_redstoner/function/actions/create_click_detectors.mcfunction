@@ -1,8 +1,9 @@
 loot replace entity @s enderchest.0 loot builder_and_redstoner:blocks/get_my_head
 
-execute at @s run summon interaction ~ ~-1.625 ~ { \
-    width: 5, \
-    height: 5, \
+execute at @s run summon interaction ~ ~-2.125 ~ { \
+    width: 7, \
+    height: 7, \
+    response: true, \
     Tags: [ \
         "click_detector", \
     ] \

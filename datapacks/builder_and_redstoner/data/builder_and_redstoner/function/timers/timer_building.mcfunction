@@ -1,4 +1,4 @@
-execute unless score #timer_building counter matches 1..299 run scoreboard players set #timer_building counter 3
+execute unless score #timer_building counter matches 1..299 run scoreboard players set #timer_building counter 300
 
 execute if score #timer_building counter matches 1..10 run title @a actionbar [ \
     { \

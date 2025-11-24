@@ -1,1 +1,1 @@
-$tp @e[type=interaction, tag=click_detector, tag=$(name), limit=1, sort=nearest] ~ ~-1.625 ~
+$tp @e[type=interaction, tag=click_detector, tag=$(name), limit=1, sort=nearest] ~ ~-2.125 ~

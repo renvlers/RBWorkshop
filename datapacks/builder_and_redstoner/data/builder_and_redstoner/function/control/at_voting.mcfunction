@@ -1,4 +1,5 @@
 function builder_and_redstoner:actions/prevent_item_drop
+function builder_and_redstoner:actions/protect_gaming_area
 execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
 function builder_and_redstoner:actions/provide_items_for_vote
 

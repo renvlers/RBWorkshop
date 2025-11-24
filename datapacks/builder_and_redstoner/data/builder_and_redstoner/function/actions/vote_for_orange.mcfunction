@@ -1,3 +1,5 @@
+scoreboard players set #has_executed temp 1
+scoreboard players set #orange voted 1
 scoreboard players set #current_team temp 1
 gamemode spectator @a
 tp @a 10272 75 -2 90 15
@@ -22,4 +24,3 @@ title @a title [ \
 ]
 
 scoreboard players reset @a vote_player
-schedule function builder_and_redstoner:actions/count_votes 20s

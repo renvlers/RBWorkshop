@@ -2,3 +2,12 @@ schedule clear builder_and_redstoner:timers/timer_building
 schedule clear builder_and_redstoner:timers/timer_redstone
 schedule clear builder_and_redstoner:actions/start_game_timeleft
 schedule clear builder_and_redstoner:actions/start_turn_time_left
+schedule clear builder_and_redstoner:control/to_voting
+schedule clear builder_and_redstoner:control/to_testing
+schedule clear builder_and_redstoner:actions/start_voting
+schedule clear builder_and_redstoner:actions/set_gamemode_to_creative
+schedule clear builder_and_redstoner:control/to_gaming
+schedule clear builder_and_redstoner:actions/start_game
+schedule clear builder_and_redstoner:actions/end_current_turn
+schedule clear builder_and_redstoner:actions/count_votes
+schedule clear builder_and_redstoner:control/to_endturn

@@ -1,5 +1,6 @@
 playsound block.note_block.xylophone master @a ~ ~ ~ 10000000 1
 execute as @a at @s run function builder_and_redstoner:actions/create_click_detectors with entity @s
+execute as @a run function builder_and_redstoner:actions/set_effects
 clear @a
 
 title @a reset
