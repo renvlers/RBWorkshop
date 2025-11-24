@@ -1,0 +1,1 @@
+$tp @n[type=interaction, tag=click_detector, tag=$(UUID)] ~ ~-0.125 ~

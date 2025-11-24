@@ -1,0 +1,2 @@
+execute if score #turn_type temp matches 0 run schedule function builder_and_redstoner:control/to_voting 3s
+execute if score #turn_type temp matches 1 run schedule function builder_and_redstoner:control/to_testing 3s

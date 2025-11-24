@@ -1,0 +1,2 @@
+execute store result score @s vote_player run data get entity @s SelectedItem.components.minecraft:custom_data.score
+execute unless score @s vote_player matches 1..100 run scoreboard players reset @s vote_player

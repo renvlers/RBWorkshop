@@ -1,3 +1,1 @@
-execute \
-    as @e[type=minecraft:item] run \
-        kill @s
+kill @e[type=minecraft:item]

@@ -53,7 +53,7 @@ execute \
     as @a run \
         function builder_and_redstoner:actions/check_ready
 execute \
-    as @a[team=!red, team=!orange, team=!yellow, team=!green, team=!blue, team=!purple] run \
+    as @a[team=] run \
         function builder_and_redstoner:actions/cancel_ready
 execute \
     as @a \

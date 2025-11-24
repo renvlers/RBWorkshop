@@ -1,0 +1,36 @@
+function builder_and_redstoner:actions/prevent_item_drop
+execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s
+function builder_and_redstoner:actions/provide_items_for_vote
+
+execute as @a run function builder_and_redstoner:actions/check_vote_interaction_click with entity @s
+
+execute if score #current_team temp matches 0 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "red", \
+    team_name: "红队", \
+    team_color: "red" \
+}
+execute if score #current_team temp matches 1 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "orange", \
+    team_name: "橙队", \
+    team_color: "gold" \
+}
+execute if score #current_team temp matches 2 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "yellow", \
+    team_name: "黄队", \
+    team_color: "yellow" \
+}
+execute if score #current_team temp matches 3 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "green", \
+    team_name: "绿队", \
+    team_color: "green" \
+}
+execute if score #current_team temp matches 4 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "blue", \
+    team_name: "蓝队", \
+    team_color: "blue" \
+}
+execute if score #current_team temp matches 5 run function builder_and_redstoner:actions/show_voting_actionbar { \
+    team: "purple", \
+    team_name: "紫队", \
+    team_color: "dark_purple" \
+}

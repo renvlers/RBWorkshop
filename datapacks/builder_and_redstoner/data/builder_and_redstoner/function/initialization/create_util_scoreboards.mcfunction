@@ -125,3 +125,15 @@ scoreboard players reset * gaming_sidebar_purple
 
 scoreboard objectives add total_score dummy
 scoreboard players reset * total_score
+
+scoreboard objectives add vote dummy
+scoreboard players reset * vote
+
+scoreboard objectives add vote_count dummy
+scoreboard players reset * vote_count
+
+scoreboard objectives add voted dummy
+scoreboard players reset * voted
+
+scoreboard objectives add vote_player dummy
+scoreboard players reset * vote_player

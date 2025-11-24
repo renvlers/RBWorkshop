@@ -202,12 +202,12 @@ function builder_and_redstoner:actions/decide_themes_or_problems
 
 # teleport players and set gamemode to creative
 gamemode spectator @a
-execute as @a[team=red] run tp @s 10225 75 -2 90 15
-execute as @a[team=orange] run tp @s 10272 75 -2 90 15
-execute as @a[team=yellow] run tp @s 10319 75 -2 90 15
-execute as @a[team=green] run tp @s 10225 75 45 90 15
-execute as @a[team=blue] run tp @s 10272 75 45 90 15
-execute as @a[team=purple] run tp @s 10319 75 45 90 15
+tp @a[team=red] 10225 75 -2 90 15
+tp @a[team=orange] 10272 75 -2 90 15
+tp @a[team=yellow] 10319 75 -2 90 15
+tp @a[team=green] 10225 75 45 90 15
+tp @a[team=blue] 10272 75 45 90 15
+tp @a[team=purple] 10319 75 45 90 15
 # 延迟切换创造模式，确保玩家处于飞行状态
 schedule function builder_and_redstoner:actions/set_gamemode_to_creative 3t
 
