@@ -11,3 +11,7 @@ schedule clear builder_and_redstoner:actions/start_game
 schedule clear builder_and_redstoner:actions/end_current_turn
 schedule clear builder_and_redstoner:actions/count_votes
 schedule clear builder_and_redstoner:control/to_endturn
+schedule clear builder_and_redstoner:actions/select_1st
+schedule clear builder_and_redstoner:actions/select_2nd
+schedule clear builder_and_redstoner:actions/select_3rd
+schedule clear builder_and_redstoner:control/to_lobby

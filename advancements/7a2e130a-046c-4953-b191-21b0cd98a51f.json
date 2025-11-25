@@ -1447,6 +1447,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:creaking": "2025-11-25 18:35:53 +0800",
       "minecraft:shulker": "2025-11-19 19:38:15 +0800"
     },
     "done": false
@@ -1947,6 +1948,12 @@
   "minecraft:recipes/building_blocks/prismarine_brick_slab": {
     "criteria": {
       "has_prismarine_bricks": "2025-11-25 00:01:16 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_helmet": "2025-11-25 20:51:03 +0800"
     },
     "done": true
   },

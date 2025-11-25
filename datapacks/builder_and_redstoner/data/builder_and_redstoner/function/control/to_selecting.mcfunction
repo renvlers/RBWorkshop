@@ -137,6 +137,12 @@ execute \
 bossbar set builder_and_redstoner:current_turn visible true
 bossbar set builder_and_redstoner:current_turn players @a
 
+data remove entity @n[tag=memory_entity, type=marker] data.selected_themes
+data remove entity @n[tag=memory_entity, type=marker] data.selected_problems
+
+scoreboard players reset #prepared_themes temp
+scoreboard players reset #prepared_problems temp
+
 # load random themes/problems for selection
 execute \
     if score #turn_type temp matches 0 run \

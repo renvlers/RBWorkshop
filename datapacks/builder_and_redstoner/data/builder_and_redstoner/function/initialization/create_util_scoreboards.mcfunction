@@ -137,3 +137,9 @@ scoreboard players reset * voted
 
 scoreboard objectives add vote_player dummy
 scoreboard players reset * vote_player
+
+scoreboard objectives add temp_score dummy
+scoreboard players reset * temp_score
+
+scoreboard objectives add rank dummy
+scoreboard players reset * rank
