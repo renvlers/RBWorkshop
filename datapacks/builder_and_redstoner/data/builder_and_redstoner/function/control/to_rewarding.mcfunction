@@ -102,14 +102,14 @@ execute if score #purple rank matches 3 run data modify entity @e[type=marker,ta
 execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:actions/select_2nd 5s
 execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:actions/select_1st 7s
 
-execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:control/to_lobby 12s
+execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:control/to_lobby 17s
 
 
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:actions/select_3rd 5s
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:actions/select_2nd 7s
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:actions/select_1st 9s
 
-execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:control/to_lobby 14s
+execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:control/to_lobby 19s
 
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "REWARDING"}} run \
