@@ -4,3 +4,5 @@ item replace entity @s armor.head with golden_helmet[item_name={ text: "【红�
 item replace entity @s armor.chest with golden_chestplate[item_name={ text: "【红建工坊】金胸甲", color: "#FAFC75", bold: true }]
 item replace entity @s armor.legs with golden_leggings[item_name={ text: "【红建工坊】金护腿", color: "#FAFC75", bold: true }]
 item replace entity @s armor.feet with golden_boots[item_name={ text: "【红建工坊】金靴子", color: "#FAFC75", bold: true }]
+
+scoreboard players set #has_first temp 1
