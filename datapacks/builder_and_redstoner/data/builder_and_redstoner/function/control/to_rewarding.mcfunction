@@ -75,29 +75,29 @@ data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first set valu
 data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second set value []
 data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third set value []
 
-execute if score #red rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"红队",color:"red",bold:true}
-execute if score #red rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"红队",color:"red",bold:true}
-execute if score #red rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"红队",color:"red",bold:true}
+execute if score #red rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【红队】",color:"red",bold:true}
+execute if score #red rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【红队】",color:"red",bold:true}
+execute if score #red rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【红队】",color:"red",bold:true}
 
-execute if score #orange rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"橙队",color:"gold",bold:true}
-execute if score #orange rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"橙队",color:"gold",bold:true}
-execute if score #orange rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"橙队",color:"gold",bold:true}
+execute if score #orange rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【橙队】",color:"gold",bold:true}
+execute if score #orange rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【橙队】",color:"gold",bold:true}
+execute if score #orange rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【橙队】",color:"gold",bold:true}
 
-execute if score #yellow rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"黄队",color:"yellow",bold:true}
-execute if score #yellow rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"黄队",color:"yellow",bold:true}
-execute if score #yellow rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"黄队",color:"yellow",bold:true}
+execute if score #yellow rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【黄队】",color:"yellow",bold:true}
+execute if score #yellow rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【黄队】",color:"yellow",bold:true}
+execute if score #yellow rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【黄队】",color:"yellow",bold:true}
 
-execute if score #green rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"绿队",color:"green",bold:true}
-execute if score #green rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"绿队",color:"green",bold:true}
-execute if score #green rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"绿队",color:"green",bold:true}
+execute if score #green rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【绿队】",color:"green",bold:true}
+execute if score #green rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【绿队】",color:"green",bold:true}
+execute if score #green rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【绿队】",color:"green",bold:true}
 
-execute if score #blue rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"蓝队",color:"blue",bold:true}
-execute if score #blue rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"蓝队",color:"blue",bold:true}
-execute if score #blue rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"蓝队",color:"blue",bold:true}
+execute if score #blue rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【蓝队】",color:"blue",bold:true}
+execute if score #blue rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【蓝队】",color:"blue",bold:true}
+execute if score #blue rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【蓝队】",color:"blue",bold:true}
 
-execute if score #purple rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"紫队",color:"dark_purple",bold:true}
-execute if score #purple rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"紫队",color:"dark_purple",bold:true}
-execute if score #purple rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"紫队",color:"dark_purple",bold:true}
+execute if score #purple rank matches 1 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first append value {text:"【紫队】",color:"dark_purple",bold:true}
+execute if score #purple rank matches 2 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second append value {text:"【紫队】",color:"dark_purple",bold:true}
+execute if score #purple rank matches 3 run data modify entity @e[type=marker,tag=memory_entity,limit=1] data.third append value {text:"【紫队】",color:"dark_purple",bold:true}
 
 execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:actions/select_2nd 5s
 execute if score #active_teams temp matches ..2 run schedule function builder_and_redstoner:actions/select_1st 7s
