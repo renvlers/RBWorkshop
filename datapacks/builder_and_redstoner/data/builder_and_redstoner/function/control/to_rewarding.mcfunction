@@ -8,6 +8,14 @@ execute as @a run function builder_and_redstoner:actions/set_effects
 
 function builder_and_redstoner:actions/get_rank
 
+scoreboard objectives setdisplay sidebar lobby_sidebar
+scoreboard objectives setdisplay sidebar.team.red lobby_sidebar_red
+scoreboard objectives setdisplay sidebar.team.gold lobby_sidebar_orange
+scoreboard objectives setdisplay sidebar.team.yellow lobby_sidebar_yellow
+scoreboard objectives setdisplay sidebar.team.green lobby_sidebar_green
+scoreboard objectives setdisplay sidebar.team.blue lobby_sidebar_blue
+scoreboard objectives setdisplay sidebar.team.dark_purple lobby_sidebar_purple
+
 title @a reset
 execute if score #red_team_count player_count matches 1.. run title @a[team=red] subtitle [ \
     { \
