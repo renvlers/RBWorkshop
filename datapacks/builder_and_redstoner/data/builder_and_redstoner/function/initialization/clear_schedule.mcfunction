@@ -15,3 +15,4 @@ schedule clear builder_and_redstoner:actions/select_1st
 schedule clear builder_and_redstoner:actions/select_2nd
 schedule clear builder_and_redstoner:actions/select_3rd
 schedule clear builder_and_redstoner:control/to_lobby
+schedule clear builder_and_redstoner:timers/timer_voting

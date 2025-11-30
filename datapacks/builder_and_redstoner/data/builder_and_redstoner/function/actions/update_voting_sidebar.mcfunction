@@ -708,84 +708,147 @@ $execute if score #turn_type temp matches 1 run \
 
 scoreboard players display name *label_time_limit gaming_sidebar [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_red [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_green [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
 ]
 scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
     { \
-        text: "当前状态：", \
-        color: "#4AA7CF", \
+        text: "正在投票 - 剩余 ", \
+        color: "light_purple", \
         bold: true \
     }, \
     { \
-        text: "正在投票", \
+        type: "score", \
+        score: { \
+            name: "#timer_voting_display", \
+            objective: "temp" \
+        }, \
+        color: "yellow", \
+        bold: true \
+    }, \
+    { \
+        text: " 秒", \
         color: "light_purple", \
         bold: true \
     } \
