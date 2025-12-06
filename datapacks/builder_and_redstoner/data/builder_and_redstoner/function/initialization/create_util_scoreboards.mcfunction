@@ -143,3 +143,6 @@ scoreboard players reset * temp_score
 
 scoreboard objectives add rank dummy
 scoreboard players reset * rank
+
+scoreboard objectives add menu_status dummy
+scoreboard players reset * menu_status

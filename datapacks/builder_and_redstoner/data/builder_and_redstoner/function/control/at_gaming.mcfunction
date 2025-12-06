@@ -9,6 +9,8 @@ scoreboard players operation #seconds_left temp %= #divider temp
 
 function builder_and_redstoner:actions/update_gaming_sidebar with entity @n[tag=memory_entity, type=marker] data
 function builder_and_redstoner:actions/protect_gaming_area
+execute if score #turn_type temp matches 0 run function builder_and_redstoner:actions/fix_hud_9_building
+execute if score #turn_type temp matches 1 run function builder_and_redstoner:actions/fix_hud_9_redstone
 
 # teleport players out of area
 execute as @a[team=red] at @s unless entity @s[x=10206, y=61, z=-21, dx=38 , dy=36 , dz=38] run title @s actionbar { \
