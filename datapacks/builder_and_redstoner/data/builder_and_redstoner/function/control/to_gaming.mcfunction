@@ -8,19 +8,19 @@ function builder_and_redstoner:actions/set_effects
 scoreboard players set #divider temp 60
 
 # 初始化游戏区
-fill 10208 63 -19 10242 97 15 air
-fill 10255 63 -19 10289 97 15 air
-fill 10302 63 -19 10336 97 15 air
-fill 10208 63 28 10242 97 62 air
-fill 10255 63 28 10289 97 62 air
-fill 10302 63 28 10336 97 62 air
+fill 10208 63 -19 10242 97 15 air destroy
+fill 10255 63 -19 10289 97 15 air destroy
+fill 10302 63 -19 10336 97 15 air destroy
+fill 10208 63 28 10242 97 62 air destroy
+fill 10255 63 28 10289 97 62 air destroy
+fill 10302 63 28 10336 97 62 air destroy
 
-fill 10208 62 -19 10242 62 15 grass_block
-fill 10255 62 -19 10289 62 15 grass_block
-fill 10302 62 -19 10336 62 15 grass_block
-fill 10208 62 28 10242 62 62 grass_block
-fill 10255 62 28 10289 62 62 grass_block
-fill 10302 62 28 10336 62 62 grass_block
+fill 10208 62 -19 10242 62 15 grass_block destroy
+fill 10255 62 -19 10289 62 15 grass_block destroy
+fill 10302 62 -19 10336 62 15 grass_block destroy
+fill 10208 62 28 10242 62 62 grass_block destroy
+fill 10255 62 28 10289 62 62 grass_block destroy
+fill 10302 62 28 10336 62 62 grass_block destroy
 
 fillbiome 10206 61 -21 10338 98 64 plains
 
