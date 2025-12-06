@@ -11,7 +11,7 @@ tellraw @a { \
 }
 execute if score #red_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【红队】 ", \
+        text: "【红队】", \
         color: "red", \
         bold: true \
     }, \
@@ -27,7 +27,7 @@ execute if score #red_team_count player_count matches 1.. run tellraw @a [ \
 ]
 execute if score #orange_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【橙队】 ", \
+        text: "【橙队】", \
         color: "gold", \
         bold: true \
     }, \
@@ -43,7 +43,7 @@ execute if score #orange_team_count player_count matches 1.. run tellraw @a [ \
 ]
 execute if score #yellow_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【黄队】 ", \
+        text: "【黄队】", \
         color: "yellow", \
         bold: true \
     }, \
@@ -59,7 +59,7 @@ execute if score #yellow_team_count player_count matches 1.. run tellraw @a [ \
 ]
 execute if score #green_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【绿队】 ", \
+        text: "【绿队】", \
         color: "green", \
         bold: true \
     }, \
@@ -75,7 +75,7 @@ execute if score #green_team_count player_count matches 1.. run tellraw @a [ \
 ]
 execute if score #blue_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【蓝队】 ", \
+        text: "【蓝队】", \
         color: "blue", \
         bold: true \
     }, \
@@ -91,7 +91,7 @@ execute if score #blue_team_count player_count matches 1.. run tellraw @a [ \
 ]
 execute if score #purple_team_count player_count matches 1.. run tellraw @a [ \
     { \
-        text: "【紫队】 ", \
+        text: "【紫队】", \
         color: "dark_purple", \
         bold: true \
     }, \

@@ -24,3 +24,4 @@ title @a title [ \
 ]
 
 scoreboard players reset @a vote_player
+function builder_and_redstoner:timers/timer_voting

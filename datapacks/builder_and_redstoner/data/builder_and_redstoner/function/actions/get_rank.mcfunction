@@ -12,4 +12,7 @@ execute if score #purple_team_count player_count matches 1.. run scoreboard play
 # 3. 设置初始名次为 1
 scoreboard players set #current_rank rank 1
 
+# 4. 初始化排序计数器
+scoreboard players reset #sort counter
+
 function builder_and_redstoner:actions/get_current_first

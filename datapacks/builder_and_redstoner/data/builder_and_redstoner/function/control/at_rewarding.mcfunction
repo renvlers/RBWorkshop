@@ -1,1 +1,2 @@
 function builder_and_redstoner:actions/prevent_item_drop
+function builder_and_redstoner:actions/update_lobby_sidebar

@@ -4,6 +4,7 @@ execute as @a run function builder_and_redstoner:actions/set_effects
 clear @a
 
 title @a reset
+title @a actionbar ""
 execute if score #turn_type temp matches 0 run title @a subtitle { \
     text: "即将进入投票阶段", \
     color: "aqua", \
