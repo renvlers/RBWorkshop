@@ -146,3 +146,6 @@ scoreboard players reset * rank
 
 scoreboard objectives add menu_status dummy
 scoreboard players reset * menu_status
+
+scoreboard objectives add menu_control dummy
+scoreboard players reset * menu_control

@@ -52,6 +52,11 @@ function builder_and_redstoner:actions/show_turn_start_title with entity @n[tag=
 execute if score #turn_type temp matches 0 run function builder_and_redstoner:timers/timer_building
 execute if score #turn_type temp matches 1 run function builder_and_redstoner:timers/timer_redstone
 
+# initialize menu status
+execute if score #turn_type temp matches 0 run scoreboard players set @a menu_status 0
+execute if score #turn_type temp matches 0 run scoreboard players set @a menu_control 0
+execute if score #turn_type temp matches 0 run scoreboard players set #menu_options temp 4
+
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "GAMING"}} run \
         data modify storage builder_and_redstoner:config config.status set value "GAMING"

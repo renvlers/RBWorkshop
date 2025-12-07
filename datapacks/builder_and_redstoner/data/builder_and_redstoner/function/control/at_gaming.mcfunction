@@ -87,3 +87,7 @@ execute as @a[team=purple] at @s unless dimension overworld run title @s actionb
     bold: true \
 }
 execute as @a[team=purple] at @s unless dimension overworld in overworld run tp @s 10319 75 45 90 15
+
+execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_open
+execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes unless items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_closed
+execute if score #turn_type temp matches 0 as @a[team=!] if score @s right_check matches 1 if score @s menu_control matches 1 if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_selection_changed
