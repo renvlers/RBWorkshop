@@ -1,5 +1,6 @@
 function builder_and_redstoner:actions/prevent_item_drop
 function builder_and_redstoner:actions/protect_gaming_area
+execute if score #turn_type temp matches 0 as @a run function builder_and_redstoner:actions/close_menus with entity @s EnderItems[0].components."minecraft:profile"
 execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
 clear @a
 
