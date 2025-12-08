@@ -4,8 +4,6 @@ execute as @a[team=!] unless items entity @s container.8 warped_fungus_on_a_stic
     item_model=nether_star \
 ]
 
-kill @e[type=item, nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{item_type:"menu"}}}}]
-
 execute as @a[team=!] if items entity @s container.0 warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run item replace entity @s container.0 with air
 execute as @a[team=!] if items entity @s container.1 warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run item replace entity @s container.1 with air
 execute as @a[team=!] if items entity @s container.2 warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run item replace entity @s container.2 with air

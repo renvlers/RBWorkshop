@@ -34,7 +34,7 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     shadow: 0b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
-    text: {text: "更换地皮", color: yellow, bold: true}, \
+    text: {text: "更换地皮为副手方块", color: yellow, bold: true}, \
     text_opacity: 255, \
     transformation: { \
         left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
@@ -196,7 +196,7 @@ summon minecraft:item_display ^ ^ ^0.5 { \
     transformation: { \
         left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
         right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
-        scale: [0.15f, 0.15f, 0.15f], \
+        scale: [0.2f, 0.2f, 0.2f], \
         translation: [0.0f, 0.0f, 0.0f] \
     }, \
     Tags: [ \

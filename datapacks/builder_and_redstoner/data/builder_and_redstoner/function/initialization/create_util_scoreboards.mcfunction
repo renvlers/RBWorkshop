@@ -149,3 +149,9 @@ scoreboard players reset * menu_status
 
 scoreboard objectives add menu_control dummy
 scoreboard players reset * menu_control
+
+scoreboard objectives add menu_drop minecraft.dropped:minecraft.warped_fungus_on_a_stick
+scoreboard players reset * menu_drop
+
+scoreboard objectives add plot_change_success dummy
+scoreboard players reset * plot_change_success

@@ -9,8 +9,6 @@ scoreboard players operation #seconds_left temp %= #divider temp
 
 function builder_and_redstoner:actions/update_gaming_sidebar with entity @n[tag=memory_entity, type=marker] data
 function builder_and_redstoner:actions/protect_gaming_area
-execute if score #turn_type temp matches 0 run function builder_and_redstoner:actions/fix_hud_9_building
-execute if score #turn_type temp matches 1 run function builder_and_redstoner:actions/fix_hud_9_redstone
 
 # teleport players out of area
 execute as @a[team=red] at @s unless entity @s[x=10206, y=61, z=-21, dx=38 , dy=36 , dz=38] run title @s actionbar { \
@@ -88,6 +86,11 @@ execute as @a[team=purple] at @s unless dimension overworld run title @s actionb
 }
 execute as @a[team=purple] at @s unless dimension overworld in overworld run tp @s 10319 75 45 90 15
 
+execute if score #turn_type temp matches 0 run function builder_and_redstoner:actions/fix_hud_9_building
+execute if score #turn_type temp matches 1 run function builder_and_redstoner:actions/fix_hud_9_redstone
+
 execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_open
 execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes unless items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_closed
 execute if score #turn_type temp matches 0 as @a[team=!] if score @s right_check matches 1 if score @s menu_control matches 1 if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_selection_changed
+
+execute if score #turn_type temp matches 0 as @a[team=!, scores={menu_drop=1..}] if entity @n[type=item, nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{item_type:"menu"}}}}] run function builder_and_redstoner:events/on_menu_used
