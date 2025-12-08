@@ -1,4 +1,4 @@
-$tp @n[tag=menu_title, tag=$(name)] ^ ^0.25 ^0.5
+$tp @n[tag=menu_title, tag=$(name)] ^ ^0.15 ^0.5
 
 $tp @n[tag=menu_change_plot_icon, tag=$(name)] ^0.45 ^ ^0.5
 $tp @n[tag=menu_get_biome_brush_icon, tag=$(name)] ^0.15 ^ ^0.5
