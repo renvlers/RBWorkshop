@@ -10,7 +10,7 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     shadow: 0b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
-    text: {bold: 1b, color: "gold", extra: [{bold: 1b, color: "green", text: "【右键切换，Q 键使用】"}], text: "建筑实用菜单\n"}, \
+    text: [{ text: "建筑实用菜单\n", color: gold, bold: true}, {text: "【右键切换，", color: green, bold: true}, {type: "keybind", keybind: "key.drop", color: yellow, bold: true}, {text: " 键使用】", color: green, bold: true}], \
     text_opacity: 255, \
     transformation: { \
         left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], \
