@@ -155,3 +155,6 @@ scoreboard players reset * menu_drop
 
 scoreboard objectives add plot_change_success dummy
 scoreboard players reset * plot_change_success
+
+scoreboard objectives add get_biome_brush_trigger trigger
+scoreboard players reset * get_biome_brush_trigger

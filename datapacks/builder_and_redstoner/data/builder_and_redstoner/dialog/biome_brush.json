@@ -1,0 +1,1314 @@
+{
+    "type": "multi_action",
+    "pause": false,
+    "can_close_with_escape": true,
+    "after_action": "close",
+    "title": {
+        "text": "选择生物群系",
+        "color": "aqua",
+        "bold": true
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/red_sand"
+                },
+                {
+                    "text": " 恶地",
+                    "color": "red",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 0"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/bamboo_stalk"
+                },
+                {
+                    "text": " 竹林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 1"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/basalt_top"
+                },
+                {
+                    "text": " 玄武岩三角洲",
+                    "color": "dark_gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 2"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/sand"
+                },
+                {
+                    "text": " 沙滩",
+                    "color": "yellow",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 3"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/birch_log"
+                },
+                {
+                    "text": " 桦木森林",
+                    "color": "yellow",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 4"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/cherry_leaves"
+                },
+                {
+                    "text": " 樱花树林",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 5"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/blue_ice"
+                },
+                {
+                    "text": " 冷水海洋",
+                    "color": "dark_aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 6"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/crimson_nylium"
+                },
+                {
+                    "text": " 绯红森林",
+                    "color": "dark_red",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 7"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/dark_oak_log"
+                },
+                {
+                    "text": " 黑森林",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 8"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/water_flow"
+                },
+                {
+                    "text": " 冷水深海",
+                    "color": "dark_blue",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 9"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/sculk"
+                },
+                {
+                    "text": " 深暗之域",
+                    "color": "black",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 10"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/packed_ice"
+                },
+                {
+                    "text": " 冰冻深海",
+                    "color": "blue",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 11"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/sand"
+                },
+                {
+                    "text": " 温水深海",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 12"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/prismarine_bricks"
+                },
+                {
+                    "text": " 深海",
+                    "color": "dark_blue",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 13"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/cactus_side"
+                },
+                {
+                    "text": " 沙漠",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 14"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/dripstone_block"
+                },
+                {
+                    "text": " 溶洞",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 15"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/end_stone"
+                },
+                {
+                    "text": " 末地荒地",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 16"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/purpur_block"
+                },
+                {
+                    "text": " 末地高地",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 17"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/end_stone_bricks"
+                },
+                {
+                    "text": " 末地内陆",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 18"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/terracotta"
+                },
+                {
+                    "text": " 风蚀恶地",
+                    "color": "red",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 19"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/pink_tulip"
+                },
+                {
+                    "text": " 繁花森林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 20"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/oak_log"
+                },
+                {
+                    "text": " 森林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 21"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/ice"
+                },
+                {
+                    "text": " 冻洋",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 22"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/snow"
+                },
+                {
+                    "text": " 冰封山峰",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 23"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/ice"
+                },
+                {
+                    "text": " 冻河",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 24"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/powder_snow"
+                },
+                {
+                    "text": " 雪林",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 25"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/packed_ice"
+                },
+                {
+                    "text": " 冰刺之地",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 26"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/stone"
+                },
+                {
+                    "text": " 尖峭山峰",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 27"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/jungle_log"
+                },
+                {
+                    "text": " 丛林",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 28"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/seagrass"
+                },
+                {
+                    "text": " 温水海洋",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 29"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/moss_block"
+                },
+                {
+                    "text": " 繁茂洞穴",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 30"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/mangrove_log"
+                },
+                {
+                    "text": " 红树林沼泽",
+                    "color": "dark_red",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 31"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/poppy"
+                },
+                {
+                    "text": " 草甸",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 32"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/mycelium_top"
+                },
+                {
+                    "text": " 蘑菇岛",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 33"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/netherrack"
+                },
+                {
+                    "text": " 下界荒地",
+                    "color": "dark_red",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 34"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/water_still"
+                },
+                {
+                    "text": " 海洋",
+                    "color": "blue",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 35"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/birch_log"
+                },
+                {
+                    "text": " 原始桦木森林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 36"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/podzol_top"
+                },
+                {
+                    "text": " 原始松木针叶林",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 37"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/spruce_log"
+                },
+                {
+                    "text": " 原始云杉针叶林",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 38"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/pale_oak_log"
+                },
+                {
+                    "text": " 苍白之园",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 39"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/grass_block_side"
+                },
+                {
+                    "text": " 平原",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 40"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/water_still"
+                },
+                {
+                    "text": " 河流",
+                    "color": "blue",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 41"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/acacia_log"
+                },
+                {
+                    "text": " 热带草原",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 42"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/acacia_planks"
+                },
+                {
+                    "text": " 热带高原",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 43"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/end_stone"
+                },
+                {
+                    "text": " 末地小型岛屿",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 44"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/snow"
+                },
+                {
+                    "text": " 积雪沙滩",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 45"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/grass_block_snow"
+                },
+                {
+                    "text": " 雪原",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 46"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/powder_snow"
+                },
+                {
+                    "text": " 积雪山坡",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 47"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/spruce_leaves"
+                },
+                {
+                    "text": " 积雪针叶林",
+                    "color": "white",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 48"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/soul_soil"
+                },
+                {
+                    "text": " 灵魂沙峡谷",
+                    "color": "aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 49"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/jungle_leaves"
+                },
+                {
+                    "text": " 稀疏丛林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 50"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/stone"
+                },
+                {
+                    "text": " 裸岩山峰",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 51"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/stone"
+                },
+                {
+                    "text": " 石岸",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 52"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/yellow_wool"
+                },
+                {
+                    "text": " 向日葵平原",
+                    "color": "yellow",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 53"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/lily_pad"
+                },
+                {
+                    "text": " 沼泽",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 54"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/spruce_log"
+                },
+                {
+                    "text": " 针叶林",
+                    "color": "dark_green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 55"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/end_stone"
+                },
+                {
+                    "text": " 末地",
+                    "color": "light_purple",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 56"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/black_concrete"
+                },
+                {
+                    "text": " 虚空",
+                    "color": "black",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 57"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/sand"
+                },
+                {
+                    "text": " 暖水海洋",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 58"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/warped_nylium"
+                },
+                {
+                    "text": " 诡异森林",
+                    "color": "dark_aqua",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 59"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/oak_log"
+                },
+                {
+                    "text": " 风袭森林",
+                    "color": "green",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 60"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/gravel"
+                },
+                {
+                    "text": " 风袭沙砾丘陵",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 61"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/stone"
+                },
+                {
+                    "text": " 风袭丘陵",
+                    "color": "gray",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 62"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/acacia_log"
+                },
+                {
+                    "text": " 风袭热带草原",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 63"
+            },
+            "width": 100
+        },
+        {
+            "label": [
+                {
+                    "type": "object",
+                    "object": "atlas",
+                    "atlas": "blocks",
+                    "sprite": "minecraft:block/coarse_dirt"
+                },
+                {
+                    "text": " 疏林恶地",
+                    "color": "gold",
+                    "bold": true
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger get_biome_brush_trigger set 64"
+            },
+            "width": 100
+        }
+    ]
+}

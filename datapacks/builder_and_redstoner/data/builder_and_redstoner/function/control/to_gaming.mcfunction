@@ -57,6 +57,8 @@ execute if score #turn_type temp matches 0 run scoreboard players set @a menu_st
 execute if score #turn_type temp matches 0 run scoreboard players set @a menu_control 0
 execute if score #turn_type temp matches 0 run scoreboard players set #menu_options temp 4
 
+scoreboard players set @a get_biome_brush_trigger -1
+
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "GAMING"}} run \
         data modify storage builder_and_redstoner:config config.status set value "GAMING"

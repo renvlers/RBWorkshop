@@ -94,3 +94,9 @@ execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes unl
 execute if score #turn_type temp matches 0 as @a[team=!] if score @s right_check matches 1 if score @s menu_control matches 1 if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_selection_changed
 
 execute if score #turn_type temp matches 0 as @a[team=!, scores={menu_drop=1..}] if entity @n[type=item, nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{item_type:"menu"}}}}] run function builder_and_redstoner:events/on_menu_used
+
+execute if score #turn_type temp matches 0 as @a[team=!] run scoreboard players enable @s get_biome_brush_trigger
+execute if score #turn_type temp matches 0 as @a[team=!] if score @s get_biome_brush_trigger matches 0.. run function builder_and_redstoner:actions/get_biome_brush
+execute if score #turn_type temp matches 0 as @a[team=!] if score @s get_biome_brush_trigger matches 0.. run scoreboard players set @s get_biome_brush_trigger -1
+
+execute if score #turn_type temp matches 0 as @a[team=!] at @s if score @s right_check matches 1.. if data entity @s {SelectedItem: {components: {"minecraft:custom_data": {type: "biome_brush"}}}} run function builder_and_redstoner:events/on_biome_brush_use
