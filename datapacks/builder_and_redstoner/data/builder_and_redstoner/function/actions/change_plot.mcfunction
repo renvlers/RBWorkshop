@@ -6,7 +6,10 @@ execute unless items entity @s weapon.offhand * run tellraw @s { \
 execute unless items entity @s weapon.offhand * run return fail
 
 scoreboard players set @s plot_change_success 0
-function builder_and_redstoner:actions/fill_plots with entity @s equipment.offhand
+execute if items entity @s weapon.offhand water_bucket run function builder_and_redstoner:actions/fill_plots { id: "minecraft:water" }
+execute if items entity @s weapon.offhand lava_bucket run function builder_and_redstoner:actions/fill_plots { id: "minecraft:lava" }
+execute if items entity @s weapon.offhand powder_snow_bucket run function builder_and_redstoner:actions/fill_plots { id: "minecraft:powder_snow" }
+execute unless items entity @s weapon.offhand water_bucket unless items entity @s weapon.offhand lava_bucket unless items entity @s weapon.offhand powder_snow_bucket run function builder_and_redstoner:actions/fill_plots with entity @s equipment.offhand
 item replace entity @s weapon.offhand with air
 execute if score @s plot_change_success matches 1 run tellraw @s { \
     text: "【红建工坊】地皮更换成功", \
