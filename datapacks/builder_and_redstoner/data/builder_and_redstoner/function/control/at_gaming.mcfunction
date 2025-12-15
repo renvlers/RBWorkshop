@@ -103,3 +103,4 @@ execute if score #turn_type temp matches 0 as @a[team=!] if score @s weather_and
 execute if score #turn_type temp matches 0 as @a[team=!] if score @s weather_and_time_change_trigger matches 0.. run scoreboard players set @s weather_and_time_change_trigger -1
 
 execute if score #turn_type temp matches 0 as @a[team=!] at @s if score @s right_check matches 1.. if data entity @s {SelectedItem: {components: {"minecraft:custom_data": {type: "biome_brush"}}}} run function builder_and_redstoner:events/on_biome_brush_use
+execute if score #turn_type temp matches 0 as @a[team=!] if data entity @s {equipment: {offhand: {components: {"minecraft:custom_data": {type: "player_head_getter_book"}}}}} if data entity @s equipment.offhand.components."minecraft:writable_book_content".pages[0] run function builder_and_redstoner:actions/give_player_head with entity @s equipment.offhand.components."minecraft:writable_book_content".pages[0]
