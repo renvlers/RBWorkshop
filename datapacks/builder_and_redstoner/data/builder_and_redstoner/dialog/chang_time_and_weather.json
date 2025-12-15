@@ -1,0 +1,134 @@
+{
+    "type": "minecraft:confirmation",
+    "title": {
+        "text": "设置世界时间及天气",
+        "type": "text",
+        "color": "gold",
+        "bold": true
+    },
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": {
+            "text": "由于游戏限制，该设置仅在投票阶段生效\n因游戏区域上方有屏障，天气效果可能不可见",
+            "type": "text",
+            "color": "red",
+            "bold": true
+        }
+    },
+    "inputs": [
+        {
+            "type": "minecraft:single_option",
+            "key": "world_time",
+            "label": {
+                "text": "世界时间",
+                "type": "text",
+                "color": "yellow",
+                "bold": true
+            },
+            "label_visible": true,
+            "options": [
+                {
+                    "id": "1",
+                    "display": {
+                        "text": "白天",
+                        "type": "text",
+                        "color": "aqua",
+                        "bold": true
+                    }
+                },
+                {
+                    "id": "2",
+                    "display": {
+                        "text": "正午",
+                        "type": "text",
+                        "color": "gold",
+                        "bold": true
+                    }
+                },
+                {
+                    "id": "3",
+                    "display": {
+                        "text": "晚上",
+                        "type": "text",
+                        "color": "dark_purple",
+                        "bold": true
+                    }
+                },
+                {
+                    "id": "4",
+                    "display": {
+                        "text": "午夜",
+                        "type": "text",
+                        "color": "gray",
+                        "bold": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:single_option",
+            "key": "weather",
+            "label": {
+                "text": "天气",
+                "type": "text",
+                "color": "aqua",
+                "bold": true
+            },
+            "options": [
+                {
+                    "id": "1",
+                    "display": {
+                        "text": "晴天",
+                        "type": "text",
+                        "color": "yellow",
+                        "bold": true
+                    }
+                },
+                {
+                    "id": "2",
+                    "display": {
+                        "text": "雨天",
+                        "type": "text",
+                        "color": "green",
+                        "bold": true
+                    }
+                },
+                {
+                    "id": "3",
+                    "display": {
+                        "text": "雷雨天",
+                        "type": "text",
+                        "color": "dark_blue",
+                        "bold": true
+                    }
+                }
+            ]
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": false,
+    "after_action": "close",
+    "yes": {
+        "label": {
+            "text": "确定",
+            "type": "text",
+            "color": "green",
+            "bold": true
+        },
+        "action": {
+            "type": "minecraft:dynamic/run_command",
+            "template": "trigger weather_and_time_change_trigger set $(world_time)$(weather)"
+        }
+    },
+    "no": {
+        "label": {
+            "text": "取消",
+            "type": "text",
+            "color": "red",
+            "bold": true
+        },
+        "tooltip": {
+            "text": ""
+        }
+    }
+}

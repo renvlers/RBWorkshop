@@ -158,3 +158,6 @@ scoreboard players reset * plot_change_success
 
 scoreboard objectives add get_biome_brush_trigger trigger
 scoreboard players reset * get_biome_brush_trigger
+
+scoreboard objectives add weather_and_time_change_trigger trigger
+scoreboard players reset * weather_and_time_change_trigger

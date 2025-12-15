@@ -195,6 +195,8 @@ execute \
 
 bossbar set builder_and_redstoner:current_turn visible false
 
+time set noon
+
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "LOBBY"}} run \
         data modify storage builder_and_redstoner:config config.status set value "LOBBY"

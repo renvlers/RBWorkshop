@@ -2,6 +2,8 @@ function builder_and_redstoner:actions/count_votes
 gamemode adventure @a
 kill @e[type=interaction, tag=click_detector]
 item replace entity @a enderchest.0 with air
+time set noon
+weather clear
 
 # show scores of this turn using tellraw
 tellraw @a { \

@@ -23,5 +23,7 @@ title @a title [ \
     } \
 ]
 
+function builder_and_redstoner:actions/set_world_time_and_weather with entity @n[tag=memory_entity, type=marker] data.time_and_weather.orange
+
 scoreboard players reset @a vote_player
 function builder_and_redstoner:timers/timer_voting

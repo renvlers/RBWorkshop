@@ -58,6 +58,15 @@ execute if score #turn_type temp matches 0 run scoreboard players set @a menu_co
 execute if score #turn_type temp matches 0 run scoreboard players set #menu_options temp 4
 
 scoreboard players set @a get_biome_brush_trigger -1
+scoreboard players set @a weather_and_time_change_trigger -1
+
+# initialize world time and weather
+data modify entity @n[tag=memory_entity] data.time_and_weather.red set value {time:"noon",weather:"clear"}
+data modify entity @n[tag=memory_entity] data.time_and_weather.orange set value {time:"noon",weather:"clear"}
+data modify entity @n[tag=memory_entity] data.time_and_weather.yellow set value {time:"noon",weather:"clear"}
+data modify entity @n[tag=memory_entity] data.time_and_weather.green set value {time:"noon",weather:"clear"}
+data modify entity @n[tag=memory_entity] data.time_and_weather.blue set value {time:"noon",weather:"clear"}
+data modify entity @n[tag=memory_entity] data.time_and_weather.purple set value {time:"noon",weather:"clear"}
 
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "GAMING"}} run \
