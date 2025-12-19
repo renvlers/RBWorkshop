@@ -9,6 +9,7 @@ function builder_and_redstoner:initialization/clear_schedule
 function builder_and_redstoner:initialization/clear_team_members
 
 function builder_and_redstoner:initialization/load_building_themes
+function builder_and_redstoner:initialization/load_redstone_problems
 function builder_and_redstoner:initialization/load_config
 
 function builder_and_redstoner:actions/update_building_turns_display
