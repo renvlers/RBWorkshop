@@ -335,8 +335,6 @@ scoreboard players display numberformat *label_blank2 gaming_sidebar_purple blan
 scoreboard players display numberformat *label_my_team gaming_sidebar_purple blank
 scoreboard players display numberformat *label_active_teams gaming_sidebar_purple blank
 
-# TODO: start to_gaming timeleft
-
 # teleport players to selecting area
 execute \
     as @a[team=red] run \
