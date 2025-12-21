@@ -41,7 +41,7 @@ execute \
     if score #turn_type temp matches 0 run \
         bossbar set builder_and_redstoner:current_turn name [ \
             { \
-                text: "【红建工坊：建筑轮】第 ", \
+                text: "【红建工坊】第 ", \
                 color: "green", \
                 bold: true \
             }, \
@@ -69,7 +69,7 @@ execute \
                 bold: true \
             }, \
             { \
-                text: " 轮", \
+                text: " 轮 - 建筑轮", \
                 color: "green", \
                 bold: true \
             } \
@@ -78,7 +78,7 @@ execute \
     if score #turn_type temp matches 1 run \
         bossbar set builder_and_redstoner:current_turn name [ \
             { \
-                text: "【红建工坊：红石轮】第 ", \
+                text: "【红建工坊】第 ", \
                 color: "red", \
                 bold: true \
             }, \
@@ -106,7 +106,7 @@ execute \
                 bold: true \
             }, \
             { \
-                text: " 轮", \
+                text: " 轮 - 红石轮", \
                 color: "red", \
                 bold: true \
             } \

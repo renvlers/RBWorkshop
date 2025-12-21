@@ -31,6 +31,13 @@ kill @e[x=10206, y=61, z=26, dx=38 , dy=37 , dz=38]
 kill @e[x=10253, y=61, z=26, dx=38 , dy=37 , dz=38]
 kill @e[x=10300, y=61, z=26, dx=38 , dy=37 , dz=38]
 
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10208 76 -19 masked
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10255 76 -19 masked
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10302 76 -19 masked
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10208 76 28 masked
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10255 76 28 masked
+execute if score #turn_type temp matches 1 run clone 20251 151 -25 20285 152 9 10302 76 28 masked
+
 # decide theme or problem
 function builder_and_redstoner:actions/decide_themes_or_problems
 

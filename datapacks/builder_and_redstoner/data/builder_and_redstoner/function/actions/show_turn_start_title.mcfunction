@@ -35,7 +35,7 @@ $execute \
             }, \
             { \
                 type: "nbt", \
-                nbt: "data.selected_problems[$(current_selection)].name", \
+                nbt: "data.selected_problems[$(current_selection)].title", \
                 entity: "@n[tag=memory_entity, type=marker]", \
                 color: "red", \
                 bold: true \
