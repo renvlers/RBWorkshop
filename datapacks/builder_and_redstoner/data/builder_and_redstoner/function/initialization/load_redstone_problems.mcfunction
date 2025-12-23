@@ -12,28 +12,28 @@ data merge storage builder_and_redstoner:problems { \
             tests: [ \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -42,28 +42,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -72,28 +72,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -102,28 +102,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -132,28 +132,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -162,28 +162,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -192,28 +192,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -222,28 +222,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -252,28 +252,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:air", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:air", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
@@ -282,28 +282,28 @@ data merge storage builder_and_redstoner:problems { \
                 }, \
                 { \
                     input: [ \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false }, \
-                        { block: "minecraft:redstone_block", has_block_state: false, has_block_entity: false } \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} }, \
+                        { block: "minecraft:redstone_block", block_state: "", block_entity: {} } \
                     ], \
                     output: [ \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=false" }, \
-                        { block: "minecraft:redstone_lamp", has_block_state: true, has_block_entity: false, block_state: "lit=true" }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=false", block_entity: {} }, \
+                        { block: "minecraft:redstone_lamp", block_state: "lit=true", block_entity: {} }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                         { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
