@@ -25,3 +25,4 @@ title @a title [ \
 
 scoreboard players reset #current_test_case counter
 function builder_and_redstoner:actions/test_one_case
+function builder_and_redstoner:timers/timer_voting

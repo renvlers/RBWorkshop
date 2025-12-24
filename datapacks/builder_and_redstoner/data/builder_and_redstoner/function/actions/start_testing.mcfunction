@@ -11,5 +11,4 @@ execute if score #has_executed temp matches 0 if score #purple voted matches 0 r
 
 scoreboard players remove #teams_left counter 1
 
-execute if score #teams_left counter matches 1.. run schedule function builder_and_redstoner:actions/start_testing 20s
-execute if score #teams_left counter matches 0 run schedule function builder_and_redstoner:actions/end_current_turn 20s
+execute if score #teams_left counter matches 1.. run schedule function builder_and_redstoner:actions/start_testing 21s

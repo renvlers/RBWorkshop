@@ -1,0 +1,2 @@
+data remove entity @n[tag=memory_entity, type=marker] data.current_test_case
+$data modify entity @n[tag=memory_entity, type=marker] data.current_test_case set from entity @n[tag=memory_entity, type=marker] data.selected_problems[$(current_selection)].tests[$(current_test_case_index)]
