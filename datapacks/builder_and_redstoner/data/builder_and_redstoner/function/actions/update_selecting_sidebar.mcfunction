@@ -763,93 +763,7 @@ execute if score #turn_type temp matches 1 run \
         } \
     ]
 
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_red [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_green [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-execute if score #turn_type temp matches 0 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
-        { \
-            text: "时间限制：", \
-            color: "#4AA7CF", \
-            bold: true \
-        }, \
-        { \
-            text: "5 分钟", \
-            color: "#33EEEE" \
-        } \
-    ]
-
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar [ \
+scoreboard players display name *label_time_limit gaming_sidebar [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -860,8 +774,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_red [ \
+scoreboard players display name *label_time_limit gaming_sidebar_red [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -872,8 +785,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
+scoreboard players display name *label_time_limit gaming_sidebar_orange [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -884,8 +796,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
+scoreboard players display name *label_time_limit gaming_sidebar_yellow [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -896,8 +807,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_green [ \
+scoreboard players display name *label_time_limit gaming_sidebar_green [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -908,8 +818,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
+scoreboard players display name *label_time_limit gaming_sidebar_blue [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
@@ -920,8 +829,7 @@ execute if score #turn_type temp matches 1 run \
             color: "#33EEEE" \
         } \
     ]
-execute if score #turn_type temp matches 1 run \
-    scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
+scoreboard players display name *label_time_limit gaming_sidebar_purple [ \
         { \
             text: "时间限制：", \
             color: "#4AA7CF", \
