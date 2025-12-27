@@ -10,8 +10,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "普通的铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "没有被重命名的铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "铁" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1, components: { "minecraft:item_name": "没有被重命名的铁锭" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "铁" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -29,8 +29,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "奇怪的铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2 }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -48,8 +48,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2 }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -67,8 +67,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "并非铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "是铁锭吗" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1, components: { "minecraft:item_name": "并非铁锭" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "是铁锭吗" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -86,8 +86,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "我的铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1, components: { "minecraft:item_name": "我的铁锭" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2 }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -105,8 +105,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "不能用的铁锭" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "铁铁又锭锭" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "铁铁又锭锭" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -124,8 +124,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "小型铁块" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "小型铁块" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -143,8 +143,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "IronIngot" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "ironIngot" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "iron_ingot" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1, components: { "minecraft:item_name": "ironIngot" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "iron_ingot" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -162,8 +162,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "TogniNori" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "togni_nori" } }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1, components: { "minecraft:item_name": "togni_nori" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2 }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
@@ -181,8 +181,8 @@ data modify storage builder_and_redstoner:problems problems append value { \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, \
                 { block: "minecraft:chest", block_state: "facing=north", block_entity: { Items: [ \
                     { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0 }, \
-                    { id: "minecraft:iron_ingot", count: 1, Slot: 0, components: { "minecraft:item_name": "银锭" } }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 1 }, \
+                    { id: "minecraft:iron_ingot", count: 1, Slot: 2, components: { "minecraft:item_name": "银锭" } }, \
                 ]}}, \
                 { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" }, { block: "any" } \
             ], \
