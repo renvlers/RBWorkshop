@@ -1,0 +1,1 @@
+$scoreboard players set #redstone_problems_max_idx temp $(max_idx)
