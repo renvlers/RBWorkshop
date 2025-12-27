@@ -182,9 +182,9 @@ data remove entity @e[tag=building_turns_button, limit=1, sort=nearest] interact
 data remove entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction
 data remove entity @e[tag=start_game_button, limit=1, sort=nearest] interaction
 
-spawnpoint @a 52 64 6 -90 -28
+spawnpoint @a 40 64 6 90 0
 
-tp @a 52 64 6 -90 -28
+tp @a 40 64 6 90 0
 
 clear @a
 gamemode adventure @a
