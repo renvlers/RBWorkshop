@@ -77,6 +77,75 @@ execute if score #purple_team_count player_count matches 1.. run title @a[team=p
     { type: "score", score: { name: "#purple", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
+tellraw @a [ \
+    { \
+        text: "                               ", \
+        color: "white", \
+        bold: true, \
+        strikethrough: true \
+    }, \
+    { \
+        text: "\n" , \
+        strikethrough: false \
+    } \
+]
+
+tellraw @a { \
+    text: "\n【红建工坊】游戏结束！\n", \
+    color: "gold", \
+    bold: true \
+}
+
+execute if score #red_team_count player_count matches 1.. run tellraw @a[team=red] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#red", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#red", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+execute if score #orange_team_count player_count matches 1.. run tellraw @a[team=orange] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#orange", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#orange", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+execute if score #yellow_team_count player_count matches 1.. run tellraw @a[team=yellow] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#yellow", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#yellow", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+execute if score #green_team_count player_count matches 1.. run tellraw @a[team=green] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#green", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#green", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+execute if score #blue_team_count player_count matches 1.. run tellraw @a[team=blue] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#blue", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#blue", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+execute if score #purple_team_count player_count matches 1.. run tellraw @a[team=purple] [ \
+    { text: "队伍得分：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#purple", objective: "total_score" }, color: "aqua", bold: true }, \
+    { text: "，队伍排名：", color: "aqua", bold: true }, \
+    { type: "score", score: { name: "#purple", objective: "rank" }, color: "aqua", bold: true }, \
+    { text: "\n" } \
+]
+
+playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 100000000 1
+
 title @a[team=!] title { text: "游戏结束", color: "#CCFF99", bold: true }
 
 data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first set value []
@@ -118,6 +187,9 @@ execute if score #active_teams temp matches 3.. run schedule function builder_an
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:actions/select_1st 9s
 
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:control/to_lobby 19s
+
+time set 0
+weather clear
 
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "REWARDING"}} run \

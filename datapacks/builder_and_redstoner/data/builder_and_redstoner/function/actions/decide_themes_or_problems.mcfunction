@@ -18,11 +18,11 @@ scoreboard players set @n[tag=opt_4, type=marker] temp 0
 
 # 4. 统计票数
 # 遍历所有在线玩家，根据他们的 selection 分数，给对应的计算实体增加 votes 分数
-execute as @a[scores={selection=0}] run scoreboard players add @n[tag=opt_0, type=marker] temp 1
-execute as @a[scores={selection=1}] run scoreboard players add @n[tag=opt_1, type=marker] temp 1
-execute as @a[scores={selection=2}] run scoreboard players add @n[tag=opt_2, type=marker] temp 1
-execute as @a[scores={selection=3}] run scoreboard players add @n[tag=opt_3, type=marker] temp 1
-execute as @a[scores={selection=4}] run scoreboard players add @n[tag=opt_4, type=marker] temp 1
+execute as @a[team=!, scores={selection=0}] run scoreboard players add @n[tag=opt_0, type=marker] temp 1
+execute as @a[team=!, scores={selection=1}] run scoreboard players add @n[tag=opt_1, type=marker] temp 1
+execute as @a[team=!, scores={selection=2}] run scoreboard players add @n[tag=opt_2, type=marker] temp 1
+execute as @a[team=!, scores={selection=3}] run scoreboard players add @n[tag=opt_3, type=marker] temp 1
+execute as @a[team=!, scores={selection=4}] run scoreboard players add @n[tag=opt_4, type=marker] temp 1
 
 # 5. 找出最高票数
 # 先将 #max 初始化为 -1

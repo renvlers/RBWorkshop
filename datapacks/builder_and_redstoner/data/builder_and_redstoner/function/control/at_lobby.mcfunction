@@ -48,6 +48,15 @@ function builder_and_redstoner:actions/update_lobby_sidebar
 # prevent item drop
 function builder_and_redstoner:actions/prevent_item_drop
 
+# provide introduction and staff info and handle their right click events
+function builder_and_redstoner:actions/provide_staff_info_item
+execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run dialog show @s builder_and_redstoner:staff_info
+execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run scoreboard players reset @s right_check
+
+function builder_and_redstoner:actions/provide_introduction_item
+execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run dialog show @s builder_and_redstoner:introduction
+execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run scoreboard players reset @s right_check
+
 # check ready status
 execute \
     as @a run \
@@ -117,3 +126,8 @@ execute \
     if data entity @s interaction \
     on target run \
         data remove entity @e[tag=start_game_button, limit=1, sort=nearest] interaction
+
+execute as @e[tag=random_partition_button, limit=1, sort=nearest] if data entity @s interaction on target run function builder_and_redstoner:events/on_random_partition_button_click
+execute as @e[tag=random_partition_button, limit=1, sort=nearest] if data entity @s interaction on target run data remove entity @e[tag=random_partition_button, limit=1, sort=nearest] interaction
+
+execute as @a[x=66, y=76, z=-13, dx=0, dy=0, dz=0] at @s run function builder_and_redstoner:events/on_player_win_parkour

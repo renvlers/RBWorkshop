@@ -1,1 +1,1 @@
-gamemode creative @a
+gamemode creative @a[team=!]

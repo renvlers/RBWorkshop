@@ -12,3 +12,22 @@ execute if score #has_third temp matches 1.. run tellraw @a [ \
     {type:"nbt",nbt:"data.third",separator:"",interpret:true,entity:"@n[tag=memory_entity,type=marker]"}, \
     {text:"获得季军", color:"#F99780", bold:true}, \
 ]
+
+summon minecraft:firework_rocket 46 68 0 { \
+    LifeTime: 0, \
+    FireworksItem: { \
+        id: "minecraft:firework_rocket", \
+        count: 1b, \
+        components: { \
+            "minecraft:fireworks": { \
+                explosions: [ \
+                    { \
+                        colors: [16357248], \
+                        fade_colors: [15790320], \
+                        shape: "star" \
+                    } \
+                ] \
+            } \
+        } \
+    } \
+}

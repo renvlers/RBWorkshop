@@ -49,6 +49,7 @@ tp @a[team=yellow] 10319 75 -2 90 15
 tp @a[team=green] 10225 75 45 90 15
 tp @a[team=blue] 10272 75 45 90 15
 tp @a[team=purple] 10319 75 45 90 15
+tp @a[team=] 10272 111 21.5
 # 延迟切换创造模式，确保玩家处于飞行状态
 schedule function builder_and_redstoner:actions/set_gamemode_to_creative 3t
 

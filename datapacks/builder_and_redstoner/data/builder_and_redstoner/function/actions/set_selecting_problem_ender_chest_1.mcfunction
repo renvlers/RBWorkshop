@@ -1,5 +1,5 @@
 $execute \
-    as @a \
+    as @a[team=!] \
     unless score @s selection matches 0 run \
         item replace entity @s enderchest.11 with red_stained_glass_pane[ \
             item_name=[ \
@@ -71,7 +71,7 @@ $execute \
         ]
 
 $execute \
-    as @a \
+    as @a[team=!] \
     if score @s selection matches 0 run \
         item replace entity @s enderchest.11 with lime_stained_glass_pane[ \
             item_name=[ \

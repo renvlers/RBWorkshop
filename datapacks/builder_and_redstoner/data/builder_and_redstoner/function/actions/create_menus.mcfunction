@@ -2,12 +2,11 @@ loot replace entity @s enderchest.0 loot builder_and_redstoner:blocks/get_my_hea
 
 summon minecraft:text_display ^ ^ ^0.5 { \
     alignment: "center", \
-    background: 1073741824, \
+    background: 0, \
     billboard: "center", \
     default_background: 0b, \
     line_width: 200, \
-    see_through: 1b, \
-    shadow: 0b, \
+    shadow: 1b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
     text: [{ text: "建筑实用菜单\n", color: gold, bold: true}, {text: "【右键切换，", color: green, bold: true}, {type: "keybind", keybind: "key.drop", color: yellow, bold: true}, {text: " 键使用】", color: green, bold: true}], \
@@ -20,18 +19,18 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_title" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_title] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
 summon minecraft:text_display ^ ^ ^0.5 { \
     alignment: "center", \
-    background: 1073741824, \
+    background: 0, \
     billboard: "center", \
     default_background: 0b, \
     line_width: 200, \
-    see_through: 1b, \
-    shadow: 0b, \
+    shadow: 1b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
     text: {text: "更换地皮为副手方块", color: yellow, bold: true}, \
@@ -44,18 +43,18 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_change_plot_text" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_change_plot_text] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
 summon minecraft:text_display ^ ^ ^0.5 { \
     alignment: "center", \
-    background: 1073741824, \
+    background: 0, \
     billboard: "center", \
     default_background: 0b, \
     line_width: 200, \
-    see_through: 1b, \
-    shadow: 0b, \
+    shadow: 1b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
     text: {text: "获取生物群系刷子", color: yellow, bold: true}, \
@@ -68,18 +67,18 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_get_biome_brush_text" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_get_biome_brush_text] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
 summon minecraft:text_display ^ ^ ^0.5 { \
     alignment: "center", \
-    background: 1073741824, \
+    background: 0, \
     billboard: "center", \
     default_background: 0b, \
     line_width: 200, \
-    see_through: 1b, \
-    shadow: 0b, \
+    shadow: 1b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
     text: {text: "更改时间与天气", color: yellow, bold: true}, \
@@ -92,18 +91,18 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_change_time_and_weather_text" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_change_time_and_weather_text] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
 summon minecraft:text_display ^ ^ ^0.5 { \
     alignment: "center", \
-    background: 1073741824, \
+    background: 0, \
     billboard: "center", \
     default_background: 0b, \
     line_width: 200, \
-    see_through: 1b, \
-    shadow: 0b, \
+    shadow: 1b, \
     interpolation_duration: 1, \
     teleport_duration: 1, \
     text: {text: "获取玩家头", color: yellow, bold: true}, \
@@ -116,7 +115,8 @@ summon minecraft:text_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_get_player_head_text" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_get_player_head_text] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
@@ -133,7 +133,8 @@ summon minecraft:block_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_change_plot_icon" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_change_plot_icon] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
@@ -150,7 +151,8 @@ summon minecraft:block_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_get_biome_brush_icon" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_get_biome_brush_icon] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
@@ -167,7 +169,8 @@ summon minecraft:block_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_change_time_and_weather_icon" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_change_time_and_weather_icon] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
@@ -184,7 +187,8 @@ summon minecraft:block_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_get_player_head_icon" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_get_player_head_icon] Tags append from entity @s EnderItems[0].components."minecraft:profile".name
 
@@ -201,6 +205,7 @@ summon minecraft:item_display ^ ^ ^0.5 { \
     }, \
     Tags: [ \
         "menu_selector" \
-    ] \
+    ], \
+    brightness: { sky: 15, block: 15 } \
 }
 data modify entity @n[tag=menu_selector] Tags append from entity @s EnderItems[0].components."minecraft:profile".name

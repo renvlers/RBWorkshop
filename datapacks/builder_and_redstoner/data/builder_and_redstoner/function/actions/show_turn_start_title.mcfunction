@@ -1,9 +1,9 @@
-execute if score #turn_type temp matches 0 run title @a subtitle { \
+execute if score #turn_type temp matches 0 run title @a[team=!] subtitle { \
     text: "请在 10 分钟内完成你的作品", \
     color: "aqua", \
     bold: true \
 }
-execute if score #turn_type temp matches 1 run title @a subtitle { \
+execute if score #turn_type temp matches 1 run title @a[team=!] subtitle { \
     text: "请在 10 分钟内完成你的作品", \
     color: "gold", \
     bold: true \
@@ -11,7 +11,7 @@ execute if score #turn_type temp matches 1 run title @a subtitle { \
 
 $execute \
     if score #turn_type temp matches 0 run \
-        title @a title [ \
+        title @a[team=!] title [ \
             { \
                 text: "主题：", \
                 color: green, \
@@ -27,7 +27,7 @@ $execute \
         ]
 $execute \
     if score #turn_type temp matches 1 run \
-        title @a title [ \
+        title @a[team=!] title [ \
             { \
                 text: "问题：", \
                 color: red, \

@@ -29,6 +29,7 @@ execute if score #test_pass temp matches 1 run tellraw @a[team=!] [ \
         bold: true \
     } \
 ]
+execute as @a[team=!] at @s if score #test_pass temp matches 1 run playsound minecraft:entity.villager.yes master @s ~ ~ ~ 1000000000 1
 
 execute if score #test_pass temp matches 0 run tellraw @a[team=!] [ \
     { \
@@ -51,3 +52,4 @@ execute if score #test_pass temp matches 0 run tellraw @a[team=!] [ \
         bold: true \
     } \
 ]
+execute as @a[team=!] at @s if score #test_pass temp matches 0 run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1000000000 1

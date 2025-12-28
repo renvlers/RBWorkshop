@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:notice",
+    "can_close_with_escape": true,
+    "pause": false,
+    "title": {
+        "text": "【红建工坊】贡献者信息",
+        "color": "aqua",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "【地图制作人】",
+                    "color": "light_purple",
+                    "bold": true
+                },
+                {
+                    "text": "\n\nRenvle",
+                    "color": "light_purple",
+                    "bold": false
+                }
+            ],
+            "width": 400
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "本地图为我的第一个原版开发作品，技术水平不高，制作比较简陋，还请见谅",
+                "color": "yellow",
+                "bold": false
+            },
+            "width": 400
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "【致谢】",
+                    "color": "green",
+                    "bold": true
+                },
+                {
+                    "text": "\n\n感谢合作作者 StarCity__ 提供的大厅跑酷设计，以及部分场景下的 bug 发现",
+                    "color": "green",
+                    "bold": false
+                },
+                {
+                    "text": "\n\n感谢上海交通大学 Minecraft 社部分成员对游戏流程测试的参与：\nalex_the_noob114\nchui_xin",
+                    "color": "green",
+                    "bold": false
+                }
+            ],
+            "width": 400
+        }
+    ]
+}

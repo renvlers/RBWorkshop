@@ -1,8 +1,8 @@
-# check if player dies and run on_player_death
+# check if player dies and run on_player_die
 execute \
     as @e[type=minecraft:player] \
     if score @s death_check matches 1.. run \
-        function builder_and_redstoner:events/on_player_death
+        function builder_and_redstoner:events/on_player_die
 execute \
     as @e[type=minecraft:player] \
     if score @s death_check matches 1.. run \
@@ -68,3 +68,9 @@ execute \
 execute \
     if data storage builder_and_redstoner:config {config: {status: "REWARDING"}} run \
         function builder_and_redstoner:control/at_rewarding
+
+execute as @a[team=, gamemode=spectator] run title @s actionbar { \
+    text: "【红建工坊】当前正在观战其他玩家", \
+    color: "gray", \
+    bold: true \
+}

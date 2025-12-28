@@ -1,5 +1,5 @@
 $execute \
-    as @a \
+    as @a[team=!] \
     unless score @s selection matches 3 run \
         item replace entity @s enderchest.14 with red_stained_glass_pane[ \
             item_name=[ \
@@ -18,7 +18,7 @@ $execute \
         ]
 
 $execute \
-    as @a \
+    as @a[team=!] \
     if score @s selection matches 3 run \
         item replace entity @s enderchest.14 with lime_stained_glass_pane[ \
             item_name=[ \

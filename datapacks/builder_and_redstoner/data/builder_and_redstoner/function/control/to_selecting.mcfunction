@@ -354,8 +354,11 @@ execute \
 execute \
     as @a[team=purple] run \
         tp @s 5105 66 11 0 0
-
+tp @a[team=] 5091 80 7
 gamemode adventure @a
+
+time set noon
+weather clear
 
 title @a times 10 100 20
 execute \

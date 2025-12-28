@@ -1,3 +1,16 @@
+$execute as @a[team=] run title @s actionbar [ \
+    { \
+        text: "当前队伍：", \
+        color: "#EEFFCC", \
+        bold: true \
+    }, \
+    { \
+        text: "$(team_name)", \
+        color: "$(team_color)", \
+        bold: true \
+    } \
+]
+
 $execute as @a[team=$(team)] run title @s actionbar [ \
     { \
         text: "当前队伍：", \

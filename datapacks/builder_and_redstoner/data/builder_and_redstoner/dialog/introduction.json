@@ -1,0 +1,60 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "【红建工坊】游戏简介",
+        "color": "gold",
+        "bold": true
+    },
+    "can_close_with_escape": true,
+    "pause": false,
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "【地图介绍】",
+                    "color": "yellow",
+                    "bold": true
+                },
+                {
+                    "text": "\n\n这是一个简单的建筑速建和红石速建小游戏地图，游戏以队伍为单位，采取一局多轮制，根据玩家设置的建筑轮或红石轮总数，游戏开始时会随机决定这一轮是建筑轮还是红石轮",
+                    "color": "yellow",
+                    "bold": false
+                }
+            ],
+            "width": 400
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "【建筑速建】",
+                    "color": "green",
+                    "bold": true
+                },
+                {
+                    "text": "\n\n每轮开始时，随机取出 5 个主题，玩家投票选择后根据票数确定主题，在 10 分钟内完成主题建筑，最后所有玩家给每个建筑打分\n\n每个队伍有 20 秒的打分时间，注意不能给自己的队伍打分，建造者获得其他玩家对自己队伍建筑打分的算术平均",
+                    "color": "green",
+                    "bold": false
+                }
+            ],
+            "width": 400
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "【红石速建】",
+                    "color": "red",
+                    "bold": true
+                },
+                {
+                    "text": "\n\n每轮开始时，随机取出 5 个问题，玩家投票选择后根据票数确定问题，在 10 分钟内建造红石装置在规定判定时间内解决问题，并按照预期输出形式输出\n\n系统会随机抽取 4 个测试样例，每个 25 分，根据通过的测试点数量给每个玩家相应的分数",
+                    "color": "red",
+                    "bold": false
+                }
+            ],
+            "width": 400
+        }
+    ]
+}

@@ -1,11 +1,12 @@
 scoreboard players set #has_executed temp 1
 scoreboard players set #purple voted 1
 scoreboard players set #current_team temp 5
-gamemode spectator @a
-tp @a 10319 75 45 90 15
+scoreboard players set @a vote_player 60
+gamemode spectator @a[team=!]
+tp @a[team=!] 10319 75 45 90 15
 schedule function builder_and_redstoner:actions/set_gamemode_to_creative 3t
-title @a reset
-title @a title [ \
+title @a[team=!] reset
+title @a[team=!] title [ \
     { \
         text: "正在为", \
         color: "aqua", \
@@ -25,5 +26,5 @@ title @a title [ \
 
 function builder_and_redstoner:actions/set_world_time_and_weather with entity @n[tag=memory_entity, type=marker] data.time_and_weather.purple
 
-scoreboard players reset @a vote_player
+scoreboard players reset @a[team=!] vote_player
 function builder_and_redstoner:timers/timer_voting
