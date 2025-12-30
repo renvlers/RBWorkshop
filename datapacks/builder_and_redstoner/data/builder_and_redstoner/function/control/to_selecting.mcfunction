@@ -375,7 +375,7 @@ execute \
                 bold: true, \ 
             }, \
             { \
-                text: "，请选择你喜欢的主题", \
+                text: "，请在 15 秒内选择你喜欢的主题", \
                 color: "#CEAC88", \
                 bold: true \
             } \
@@ -394,7 +394,7 @@ execute \
                 bold: true, \ 
             }, \
             { \
-                text: "，请选择你喜欢的问题", \
+                text: "，请在 50 秒内选择你喜欢的问题", \
                 color: "#CEAC88", \
                 bold: true \
             } \
@@ -402,7 +402,7 @@ execute \
 
 title @a title [ \
     { \
-        text: "第 ", \
+        text: "【红建工坊】第 ", \
         color: "#CCFF99", \
         bold: true \
     }, \
