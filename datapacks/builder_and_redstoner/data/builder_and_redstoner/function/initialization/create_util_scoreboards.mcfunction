@@ -161,3 +161,9 @@ scoreboard players reset * get_biome_brush_trigger
 
 scoreboard objectives add weather_and_time_change_trigger trigger
 scoreboard players reset * weather_and_time_change_trigger
+
+scoreboard objectives add red_glass_pane_drop minecraft.dropped:minecraft.red_stained_glass_pane
+scoreboard players reset * red_glass_pane_drop
+
+scoreboard objectives add lime_glass_pane_drop minecraft.dropped:minecraft.lime_stained_glass_pane
+scoreboard players reset * lime_glass_pane_drop

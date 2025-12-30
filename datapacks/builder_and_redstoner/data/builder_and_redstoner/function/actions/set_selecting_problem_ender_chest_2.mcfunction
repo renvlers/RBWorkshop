@@ -16,57 +16,27 @@ $execute \
             ], \
             custom_data={problem: 1}, \
             lore=[ \
-                { \
-                    text: "【问题描述】", \
-                    color: "yellow", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(description)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【输入格式】", \
-                    color: "green", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(input)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【输出格式】", \
-                    color: "aqua", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(output)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【测试时间】", \
-                    color: "light_purple", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "5 秒", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                } \
+                [ \
+                    { \
+                        text: "按 ", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                    { \
+                        type: "keybind", \
+                        keybind: "key.drop", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                    { \
+                        text: " 键查看详情", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                ] \
             ], \
         ]
 
@@ -88,56 +58,26 @@ $execute \
             ], \
             custom_data={problem: 1}, \
             lore=[ \
-                { \
-                    text: "【问题描述】", \
-                    color: "yellow", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(description)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【输入格式】", \
-                    color: "green", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(input)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【输出格式】", \
-                    color: "aqua", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "$(output)", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                }, \
-                { text: "" }, \
-                { \
-                    text: "【测试时间】", \
-                    color: "light_purple", \
-                    bold: true, \
-                    italic: false \
-                }, \
-                { \
-                    text: "5 秒", \
-                    color: "#AAAAAA", \
-                    bold: false, \
-                    italic: false \
-                } \
+                [ \
+                    { \
+                        text: "按 ", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                    { \
+                        type: "keybind", \
+                        keybind: "key.drop", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                    { \
+                        text: " 键查看详情", \
+                        color: "aqua", \
+                        bold: true, \
+                        italic: false \
+                    }, \
+                ] \
             ], \
         ]

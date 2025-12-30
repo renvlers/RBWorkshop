@@ -87,7 +87,7 @@ execute as @a[team=purple] at @s unless dimension overworld run title @s actionb
 execute as @a[team=purple] at @s unless dimension overworld in overworld run tp @s 10319 75 45 90 15
 
 execute if score #turn_type temp matches 0 run function builder_and_redstoner:actions/fix_hud_9_building
-$execute if score #turn_type temp matches 1 run function builder_and_redstoner:actions/fix_hud_9_redstone with entity @n[tag=memory_entity, type=marker] data.selected_problems[$(current_selection)]
+execute if score #turn_type temp matches 1 run function builder_and_redstoner:actions/fix_hud_9_redstone
 
 execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_open
 execute if score #turn_type temp matches 0 as @a[team=!] at @s anchored eyes unless items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "menu"}] run function builder_and_redstoner:events/on_menu_closed
@@ -105,4 +105,6 @@ execute if score #turn_type temp matches 0 as @a[team=!] if score @s weather_and
 execute if score #turn_type temp matches 0 as @a[team=!] at @s if score @s right_check matches 1.. if data entity @s {SelectedItem: {components: {"minecraft:custom_data": {type: "biome_brush"}}}} run function builder_and_redstoner:events/on_biome_brush_use
 execute if score #turn_type temp matches 0 as @a[team=!] if data entity @s {equipment: {offhand: {components: {"minecraft:custom_data": {type: "player_head_getter_book"}}}}} if data entity @s equipment.offhand.components."minecraft:writable_book_content".pages[0] run function builder_and_redstoner:actions/give_player_head with entity @s equipment.offhand.components."minecraft:writable_book_content".pages[0]
 
-execute if score #turn_type temp matches 1 run kill @e[type=minecraft:item, nbt={Item:{id:"minecraft:written_book",components:{"minecraft:custom_data":{item_type:"problem_details"}}}}]
+execute if score #turn_type temp matches 1 run kill @e[type=minecraft:item, nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{item_type:"problem_details"}}}}]
+$execute if score #turn_type temp matches 1 as @a[team=!, scores={right_check=1..}, nbt={SelectedItem: {id: "minecraft:warped_fungus_on_a_stick", components: {"minecraft:custom_data": {item_type: "problem_details"}}}}] run function builder_and_redstoner:actions/open_redstone_problem_description_dialog with entity @n[tag=memory_entity, type=marker] data.selected_problems[$(current_selection)]
+execute if score #turn_type temp matches 1 as @a[team=!, scores={right_check=1..}, nbt={SelectedItem: {id: "minecraft:warped_fungus_on_a_stick", components: {"minecraft:custom_data": {item_type: "problem_details"}}}}] run scoreboard players reset @s right_check
