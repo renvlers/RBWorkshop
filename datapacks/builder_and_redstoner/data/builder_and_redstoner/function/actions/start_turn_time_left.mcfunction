@@ -1,6 +1,5 @@
-execute \
-    unless score #start_turn_timeleft temp matches 1..14 run \
-        scoreboard players set #start_turn_timeleft temp 15
+execute if score #turn_type temp matches 0 unless score #start_turn_timeleft temp matches 1..14 run scoreboard players set #start_turn_timeleft temp 15
+execute if score #turn_type temp matches 1 unless score #start_turn_timeleft temp matches 1..49 run scoreboard players set #start_turn_timeleft temp 50
 
 execute \
     if score #start_turn_timeleft temp matches 1..4 run \
@@ -71,7 +70,7 @@ execute \
 scoreboard players remove #start_turn_timeleft temp 1
 
 execute \
-    if score #start_turn_timeleft temp matches 1..14 run \
+    if score #start_turn_timeleft temp matches 1.. run \
         schedule function builder_and_redstoner:actions/start_turn_time_left 1s
 execute \
     if score #start_turn_timeleft temp matches 0 run \
