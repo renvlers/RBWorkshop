@@ -355,7 +355,8 @@ execute \
     as @a[team=purple] run \
         tp @s 5105 66 11 0 0
 tp @a[team=] 5091 80 7
-gamemode adventure @a
+gamemode adventure @a[team=!]
+gamemode spectator @a[team=]
 
 time set noon
 weather clear
