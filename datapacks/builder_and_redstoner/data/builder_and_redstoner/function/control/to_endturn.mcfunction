@@ -5,6 +5,8 @@ execute if score #turn_type temp matches 0 run scoreboard players reset @a[team=
 execute if score #turn_type temp matches 0 run scoreboard players reset @a[team=!] menu_control
 clear @a[team=!]
 
+execute as @a[team=!] run attribute @s minecraft:attack_damage base set 0
+
 title @a[team=!] reset
 title @a[team=!] actionbar ""
 execute if score #turn_type temp matches 0 run title @a[team=!] subtitle { \
