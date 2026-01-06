@@ -1,6 +1,6 @@
-clear @a
+clear @a[sort=arbitrary]
 
-gamemode adventure @a
+gamemode adventure @a[sort=arbitrary]
 function builder_and_redstoner:actions/set_effects
 
 function builder_and_redstoner:actions/start_game_timeleft

@@ -29,8 +29,8 @@ execute if score #purple_team_count player_count matches 0 run scoreboard player
 scoreboard players reset #teams_left counter
 function builder_and_redstoner:actions/start_voting
 
-execute as @e[tag=click_detector, type=interaction] run data remove entity @s attack
-execute as @e[tag=click_detector, type=interaction] run data remove entity @s interaction
+execute as @e[sort=arbitrary,tag=click_detector, type=interaction] run data remove entity @s attack
+execute as @e[sort=arbitrary,tag=click_detector, type=interaction] run data remove entity @s interaction
 
 execute \
     unless data storage builder_and_redstoner:config {config: {status: "VOTING"}} run \

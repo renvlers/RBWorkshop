@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "items": "minecraft:warped_fungus_on_a_stick",
+        "predicates": {
+          "minecraft:custom_data": {
+            "item_type": "menu"
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ execute if score #timer_building counter matches 1..10 run title @a actionbar [ 
     }, \
 ]
 
-execute if score #timer_building counter matches 1..10 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 10000000 1
+execute if score #timer_building counter matches 1..10 run playsound minecraft:block.note_block.hat master @a[sort=arbitrary] ~ ~ ~ 10000000 1
 
 scoreboard players remove #timer_building counter 1
 

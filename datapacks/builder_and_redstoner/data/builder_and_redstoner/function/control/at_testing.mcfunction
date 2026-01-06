@@ -1,6 +1,6 @@
 function builder_and_redstoner:actions/prevent_item_drop
 function builder_and_redstoner:actions/protect_gaming_area
-execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
+execute as @a[sort=arbitrary] at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
 
 execute if score #current_team temp matches 0 run function builder_and_redstoner:actions/show_testing_actionbar { \
     team_name: "红队", \

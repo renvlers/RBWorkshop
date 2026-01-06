@@ -1,1 +1,1 @@
-kill @e[type=minecraft:item]
+kill @e[sort=arbitrary,type=minecraft:item]

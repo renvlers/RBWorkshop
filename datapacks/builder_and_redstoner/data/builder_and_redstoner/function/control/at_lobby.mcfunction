@@ -50,84 +50,84 @@ function builder_and_redstoner:actions/prevent_item_drop
 
 # provide introduction and staff info and handle their right click events
 function builder_and_redstoner:actions/provide_staff_info_item
-execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run dialog show @s builder_and_redstoner:staff_info
-execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run scoreboard players reset @s right_check
+execute as @a[sort=arbitrary] at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run dialog show @s builder_and_redstoner:staff_info
+execute as @a[sort=arbitrary] at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "staff_info"}] run scoreboard players reset @s right_check
 
 function builder_and_redstoner:actions/provide_introduction_item
-execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run dialog show @s builder_and_redstoner:introduction
-execute as @a at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run scoreboard players reset @s right_check
+execute as @a[sort=arbitrary] at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run dialog show @s builder_and_redstoner:introduction
+execute as @a[sort=arbitrary] at @s if score @s right_check matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data={item_type: "introduction"}] run scoreboard players reset @s right_check
 
 # check ready status
 execute \
-    as @a run \
+    as @a[sort=arbitrary] run \
         function builder_and_redstoner:actions/check_ready
 execute \
-    as @a[team=] run \
+    as @a[sort=arbitrary,team=] run \
         function builder_and_redstoner:actions/cancel_ready
 execute \
-    as @a \
+    as @a[sort=arbitrary] \
     if score @s right_check matches 1.. run \
         function builder_and_redstoner:events/on_rightclick_ready
 execute \
-    as @a \
+    as @a[sort=arbitrary] \
     if score @s right_check matches 1.. run \
         scoreboard players reset @s right_check
 
 # join a team
 execute \
-    as @a[x=45, y=64, z=-13, dx=0, dy=0, dz=0, team=!red] run \
+    as @a[sort=arbitrary,x=45, y=64, z=-13, dx=0, dy=0, dz=0, team=!red] run \
         function builder_and_redstoner:actions/join_red_team
 execute \
-    as @a[x=47, y=64, z=-13, dx=0, dy=0, dz=0, team=!orange] run \
+    as @a[sort=arbitrary,x=47, y=64, z=-13, dx=0, dy=0, dz=0, team=!orange] run \
         function builder_and_redstoner:actions/join_orange_team
 execute \
-    as @a[x=49, y=64, z=-13, dx=0, dy=0, dz=0, team=!yellow] run \
+    as @a[sort=arbitrary,x=49, y=64, z=-13, dx=0, dy=0, dz=0, team=!yellow] run \
         function builder_and_redstoner:actions/join_yellow_team
 execute \
-    as @a[x=51, y=64, z=-13, dx=0, dy=0, dz=0, team=!green] run \
+    as @a[sort=arbitrary,x=51, y=64, z=-13, dx=0, dy=0, dz=0, team=!green] run \
         function builder_and_redstoner:actions/join_green_team
 execute \
-    as @a[x=53, y=64, z=-13, dx=0, dy=0, dz=0, team=!blue] run \
+    as @a[sort=arbitrary,x=53, y=64, z=-13, dx=0, dy=0, dz=0, team=!blue] run \
         function builder_and_redstoner:actions/join_blue_team
 execute \
-    as @a[x=55, y=64, z=-13, dx=0, dy=0, dz=0, team=!purple] run \
+    as @a[sort=arbitrary,x=55, y=64, z=-13, dx=0, dy=0, dz=0, team=!purple] run \
         function builder_and_redstoner:actions/join_purple_team
 
 # detect menu button clicks
 execute \
-    as @e[tag=building_turns_button, limit=1, sort=nearest] \
+    as @n[tag=building_turns_button,type=interaction] \
     if data entity @s interaction \
     on target run \
         function builder_and_redstoner:events/on_building_turns_button_click
 execute \
-    as @e[tag=building_turns_button, limit=1, sort=nearest] \
+    as @n[tag=building_turns_button,type=interaction] \
     if data entity @s interaction \
     on target run \
-        data remove entity @e[tag=building_turns_button, limit=1, sort=nearest] interaction
+        data remove entity @n[tag=building_turns_button,type=interaction] interaction
 
 execute \
-    as @e[tag=redstone_turns_button, limit=1, sort=nearest] \
+    as @n[tag=redstone_turns_button,type=interaction] \
     if data entity @s interaction \
     on target run \
         function builder_and_redstoner:events/on_redstone_turns_button_click
 execute \
-    as @e[tag=redstone_turns_button, limit=1, sort=nearest] \
+    as @n[tag=redstone_turns_button,type=interaction] \
     if data entity @s interaction \
     on target run \
-        data remove entity @e[tag=redstone_turns_button, limit=1, sort=nearest] interaction
+        data remove entity @n[tag=redstone_turns_button,type=interaction] interaction
 
 execute \
-    as @e[tag=start_game_button, limit=1, sort=nearest] \
+    as @n[tag=start_game_button,type=interaction] \
     if data entity @s interaction \
     on target run \
         function builder_and_redstoner:events/on_start_game_button_click
 execute \
-    as @e[tag=start_game_button, limit=1, sort=nearest] \
+    as @n[tag=start_game_button,type=interaction] \
     if data entity @s interaction \
     on target run \
-        data remove entity @e[tag=start_game_button, limit=1, sort=nearest] interaction
+        data remove entity @n[tag=start_game_button,type=interaction] interaction
 
-execute as @e[tag=random_partition_button, limit=1, sort=nearest] if data entity @s interaction on target run function builder_and_redstoner:events/on_random_partition_button_click
-execute as @e[tag=random_partition_button, limit=1, sort=nearest] if data entity @s interaction on target run data remove entity @e[tag=random_partition_button, limit=1, sort=nearest] interaction
+execute as @n[tag=random_partition_button,type=interaction] if data entity @s interaction on target run function builder_and_redstoner:events/on_random_partition_button_click
+execute as @n[tag=random_partition_button,type=interaction] if data entity @s interaction on target run data remove entity @n[tag=random_partition_button,type=interaction] interaction
 
-execute as @a[x=66, y=76, z=-13, dx=0, dy=0, dz=0] at @s run function builder_and_redstoner:events/on_player_win_parkour
+execute as @a[sort=arbitrary,x=66, y=76, z=-13, dx=0, dy=0, dz=0] at @s run function builder_and_redstoner:events/on_player_win_parkour

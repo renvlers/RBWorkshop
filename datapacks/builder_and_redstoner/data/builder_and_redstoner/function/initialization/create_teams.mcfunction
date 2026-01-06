@@ -82,4 +82,4 @@ team modify purple prefix { \
     bold: true \
 }
 
-team leave @a
+team leave @a[sort=arbitrary]

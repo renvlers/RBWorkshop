@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:warped_fungus_on_a_stick": 97
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 5484,
+      "minecraft:total_world_time": 13894,
+      "minecraft:leave_game": 4,
+      "minecraft:play_time": 5484,
+      "minecraft:time_since_death": 5484
+    }
+  },
+  "DataVersion": 4671
+}
