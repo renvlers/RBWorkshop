@@ -337,34 +337,34 @@ scoreboard players display numberformat *label_active_teams gaming_sidebar_purpl
 
 # teleport players to selecting area
 execute \
-    as @a[team=red] run \
+    as @a[sort=arbitrary,team=red] run \
         tp @s 5077 66 3 180 0
 execute \
-    as @a[team=orange] run \
+    as @a[sort=arbitrary,team=orange] run \
         tp @s 5091 66 3 180 0
 execute \
-    as @a[team=yellow] run \
+    as @a[sort=arbitrary,team=yellow] run \
         tp @s 5105 66 3 180 0
 execute \
-    as @a[team=green] run \
+    as @a[sort=arbitrary,team=green] run \
         tp @s 5077 66 11 0 0
 execute \
-    as @a[team=blue] run \
+    as @a[sort=arbitrary,team=blue] run \
         tp @s 5091 66 11 0 0
 execute \
-    as @a[team=purple] run \
+    as @a[sort=arbitrary,team=purple] run \
         tp @s 5105 66 11 0 0
-tp @a[team=] 5091 80 7
-gamemode adventure @a[team=!]
-gamemode spectator @a[team=]
+tp @a[sort=arbitrary,team=] 5091 80 7
+gamemode adventure @a[sort=arbitrary,team=!]
+gamemode spectator @a[sort=arbitrary,team=]
 
 time set noon
 weather clear
 
-title @a times 10 100 20
+title @a[sort=arbitrary] times 10 100 20
 execute \
     if score #turn_type temp matches 0 run \
-        title @a subtitle [ \
+        title @a[sort=arbitrary] subtitle [ \
             { \
                 text: "本轮为", \
                 color: "#CEAC88", \
@@ -383,7 +383,7 @@ execute \
         ]
 execute \
     if score #turn_type temp matches 1 run \
-        title @a subtitle [ \
+        title @a[sort=arbitrary] subtitle [ \
             { \
                 text: "本轮为", \
                 color: "#CEAC88", \
@@ -401,7 +401,7 @@ execute \
             } \
         ]
 
-title @a title [ \
+title @a[sort=arbitrary] title [ \
     { \
         text: "【红建工坊】第 ", \
         color: "#CCFF99", \

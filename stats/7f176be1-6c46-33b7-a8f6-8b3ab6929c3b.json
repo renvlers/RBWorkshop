@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:birch_slab": 1,
+      "minecraft:warped_fungus_on_a_stick": 117
+    },
+    "minecraft:dropped": {
+      "minecraft:warped_fungus_on_a_stick": 2
+    },
+    "minecraft:custom": {
+      "minecraft:damage_resisted": 44,
+      "minecraft:time_since_rest": 32415,
+      "minecraft:walk_one_cm": 7459,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 32415,
+      "minecraft:jump": 27,
+      "minecraft:time_since_death": 32415,
+      "minecraft:drop": 2,
+      "minecraft:open_enderchest": 2,
+      "minecraft:sprint_one_cm": 13120,
+      "minecraft:fall_one_cm": 550,
+      "minecraft:total_world_time": 32415,
+      "minecraft:fly_one_cm": 41019,
+      "minecraft:sneak_time": 16
+    }
+  },
+  "DataVersion": 4671
+}

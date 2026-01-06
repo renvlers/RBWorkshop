@@ -3,11 +3,11 @@ execute if score #turn_type temp matches 1 unless score #start_turn_timeleft tem
 
 execute \
     if score #start_turn_timeleft temp matches 1..4 run \
-        title @a[team=!] times 0 30 0
+        title @a[sort=arbitrary,team=!] times 0 30 0
 
 execute \
     if score #start_turn_timeleft temp matches 4..5 run \
-        title @a[team=!] subtitle [ \
+        title @a[sort=arbitrary,team=!] subtitle [ \
             { \
                 text: "剩余 ", \
                 color: "#7FACFF", \
@@ -30,7 +30,7 @@ execute \
         ]
 execute \
     if score #start_turn_timeleft temp matches 1..3 run \
-        title @a[team=!] subtitle [ \
+        title @a[sort=arbitrary,team=!] subtitle [ \
             { \
                 text: "剩余 ", \
                 color: "#7FACFF", \
@@ -54,7 +54,7 @@ execute \
 
 execute \
     if score #start_turn_timeleft temp matches 1..5 run \
-        title @a[team=!] title { \
+        title @a[sort=arbitrary,team=!] title { \
             text: "比赛即将开始", \
             color: "#CCFF99", \
             bold: true \
@@ -62,10 +62,10 @@ execute \
 
 execute \
     if score #start_turn_timeleft temp matches 4..5 run \
-        playsound minecraft:block.note_block.harp master @a[team=!] ~ ~ ~ 10000000 1
+        playsound minecraft:block.note_block.harp master @a[sort=arbitrary,team=!] ~ ~ ~ 10000000 1
 execute \
     if score #start_turn_timeleft temp matches 1..3 run \
-        playsound minecraft:block.note_block.harp master @a[team=!] ~ ~ ~ 10000000 1.4
+        playsound minecraft:block.note_block.harp master @a[sort=arbitrary,team=!] ~ ~ ~ 10000000 1.4
 
 scoreboard players remove #start_turn_timeleft temp 1
 

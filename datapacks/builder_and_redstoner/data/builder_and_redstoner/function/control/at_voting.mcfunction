@@ -1,9 +1,9 @@
 function builder_and_redstoner:actions/prevent_item_drop
 function builder_and_redstoner:actions/protect_gaming_area
-execute as @a at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
+execute as @a[sort=arbitrary] at @s run function builder_and_redstoner:actions/teleport_click_detectors with entity @s EnderItems[0].components."minecraft:profile"
 function builder_and_redstoner:actions/provide_items_for_vote
 
-execute as @a run function builder_and_redstoner:actions/check_vote_interaction_click with entity @s
+execute as @a[sort=arbitrary] run function builder_and_redstoner:actions/check_vote_interaction_click with entity @s
 
 execute if score #current_team temp matches 0 run function builder_and_redstoner:actions/show_voting_actionbar { \
     team: "red", \

@@ -21,8 +21,8 @@ execute if score #purple_team_count player_count matches 0 run scoreboard player
 
 scoreboard players reset #teams_left counter
 
-execute as @e[tag=click_detector, type=interaction] run data remove entity @s attack
-execute as @e[tag=click_detector, type=interaction] run data remove entity @s interaction
+execute as @e[sort=arbitrary,tag=click_detector, type=interaction] run data remove entity @s attack
+execute as @e[sort=arbitrary,tag=click_detector, type=interaction] run data remove entity @s interaction
 
 data remove entity @n[tag=memory_entity, type=marker] data.current_test_cases
 function builder_and_redstoner:actions/select_test_cases

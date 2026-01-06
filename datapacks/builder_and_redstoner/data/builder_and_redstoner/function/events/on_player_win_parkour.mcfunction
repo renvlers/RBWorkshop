@@ -1,4 +1,4 @@
-tellraw @a [ \
+tellraw @a[sort=arbitrary] [ \
     { \
         text: "", \
         color: "white" \

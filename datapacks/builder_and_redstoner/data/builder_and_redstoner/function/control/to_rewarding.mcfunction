@@ -1,10 +1,10 @@
-clear @a
-gamemode adventure @a
-tp @a 58 66 6 90 0
+clear @a[sort=arbitrary]
+gamemode adventure @a[sort=arbitrary]
+tp @a[sort=arbitrary] 58 66 6 90 0
 
 bossbar set builder_and_redstoner:current_turn visible false
 
-execute as @a run function builder_and_redstoner:actions/set_effects
+execute as @a[sort=arbitrary] run function builder_and_redstoner:actions/set_effects
 
 function builder_and_redstoner:actions/get_rank
 
@@ -16,8 +16,8 @@ scoreboard objectives setdisplay sidebar.team.green lobby_sidebar_green
 scoreboard objectives setdisplay sidebar.team.blue lobby_sidebar_blue
 scoreboard objectives setdisplay sidebar.team.dark_purple lobby_sidebar_purple
 
-title @a reset
-execute if score #red_team_count player_count matches 1.. run title @a[team=red] subtitle [ \
+title @a[sort=arbitrary] reset
+execute if score #red_team_count player_count matches 1.. run title @a[sort=arbitrary,team=red] subtitle [ \
     { \
         text: "队伍得分：", \
         color: "aqua", \
@@ -42,42 +42,42 @@ execute if score #red_team_count player_count matches 1.. run title @a[team=red]
     } \
 ]
 
-execute if score #orange_team_count player_count matches 1.. run title @a[team=orange] subtitle [ \
+execute if score #orange_team_count player_count matches 1.. run title @a[sort=arbitrary,team=orange] subtitle [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#orange", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#orange", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
-execute if score #yellow_team_count player_count matches 1.. run title @a[team=yellow] subtitle [ \
+execute if score #yellow_team_count player_count matches 1.. run title @a[sort=arbitrary,team=yellow] subtitle [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#yellow", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#yellow", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
-execute if score #green_team_count player_count matches 1.. run title @a[team=green] subtitle [ \
+execute if score #green_team_count player_count matches 1.. run title @a[sort=arbitrary,team=green] subtitle [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#green", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#green", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
-execute if score #blue_team_count player_count matches 1.. run title @a[team=blue] subtitle [ \
+execute if score #blue_team_count player_count matches 1.. run title @a[sort=arbitrary,team=blue] subtitle [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#blue", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#blue", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
-execute if score #purple_team_count player_count matches 1.. run title @a[team=purple] subtitle [ \
+execute if score #purple_team_count player_count matches 1.. run title @a[sort=arbitrary,team=purple] subtitle [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#purple", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#purple", objective: "rank" }, color: "aqua", bold: true } \
 ]
 
-tellraw @a [ \
+tellraw @a[sort=arbitrary] [ \
     { \
         text: "                               ", \
         color: "white", \
@@ -90,13 +90,13 @@ tellraw @a [ \
     } \
 ]
 
-tellraw @a { \
+tellraw @a[sort=arbitrary] { \
     text: "\n【红建工坊】游戏结束！\n", \
     color: "gold", \
     bold: true \
 }
 
-execute if score #red_team_count player_count matches 1.. run tellraw @a[team=red] [ \
+execute if score #red_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=red] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#red", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -104,7 +104,7 @@ execute if score #red_team_count player_count matches 1.. run tellraw @a[team=re
     { text: "\n" } \
 ]
 
-execute if score #orange_team_count player_count matches 1.. run tellraw @a[team=orange] [ \
+execute if score #orange_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=orange] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#orange", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -112,7 +112,7 @@ execute if score #orange_team_count player_count matches 1.. run tellraw @a[team
     { text: "\n" } \
 ]
 
-execute if score #yellow_team_count player_count matches 1.. run tellraw @a[team=yellow] [ \
+execute if score #yellow_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=yellow] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#yellow", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -120,7 +120,7 @@ execute if score #yellow_team_count player_count matches 1.. run tellraw @a[team
     { text: "\n" } \
 ]
 
-execute if score #green_team_count player_count matches 1.. run tellraw @a[team=green] [ \
+execute if score #green_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=green] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#green", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -128,7 +128,7 @@ execute if score #green_team_count player_count matches 1.. run tellraw @a[team=
     { text: "\n" } \
 ]
 
-execute if score #blue_team_count player_count matches 1.. run tellraw @a[team=blue] [ \
+execute if score #blue_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=blue] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#blue", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -136,7 +136,7 @@ execute if score #blue_team_count player_count matches 1.. run tellraw @a[team=b
     { text: "\n" } \
 ]
 
-execute if score #purple_team_count player_count matches 1.. run tellraw @a[team=purple] [ \
+execute if score #purple_team_count player_count matches 1.. run tellraw @a[sort=arbitrary,team=purple] [ \
     { text: "队伍得分：", color: "aqua", bold: true }, \
     { type: "score", score: { name: "#purple", objective: "total_score" }, color: "aqua", bold: true }, \
     { text: "，队伍排名：", color: "aqua", bold: true }, \
@@ -146,7 +146,7 @@ execute if score #purple_team_count player_count matches 1.. run tellraw @a[team
 
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 100000000 1
 
-title @a[team=!] title { text: "游戏结束", color: "#CCFF99", bold: true }
+title @a[sort=arbitrary,team=!] title { text: "游戏结束", color: "#CCFF99", bold: true }
 
 data modify entity @e[type=marker,tag=memory_entity,limit=1] data.first set value []
 data modify entity @e[type=marker,tag=memory_entity,limit=1] data.second set value []

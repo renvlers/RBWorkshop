@@ -1,4 +1,4 @@
-kill @n[type=item, nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{item_type:"menu"}}}}]
+kill @n[type=item, predicate=builder_and_redstoner:events/menu]
 scoreboard players reset @s menu_drop
 
 execute unless data entity @s {SelectedItemSlot: 8} run return fail
