@@ -1,0 +1,1 @@
+$execute on target run ride @s mount @n[tag=$(seat_interation_tag), sort=arbitrary, type=interaction]

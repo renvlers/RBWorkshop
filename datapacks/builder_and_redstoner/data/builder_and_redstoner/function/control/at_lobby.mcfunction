@@ -131,3 +131,5 @@ execute as @n[tag=random_partition_button,type=interaction] if data entity @s in
 execute as @n[tag=random_partition_button,type=interaction] if data entity @s interaction on target run data remove entity @n[tag=random_partition_button,type=interaction] interaction
 
 execute as @a[sort=arbitrary,x=66, y=76, z=-13, dx=0, dy=0, dz=0] at @s run function builder_and_redstoner:events/on_player_win_parkour
+
+execute as @e[tag=seat, sort=arbitrary, type=interaction] if data entity @s interaction run function builder_and_redstoner:events/on_seat_right_clicked
