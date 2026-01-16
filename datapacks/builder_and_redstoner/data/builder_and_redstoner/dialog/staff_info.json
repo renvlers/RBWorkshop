@@ -51,6 +51,12 @@
                     "color": "green",
                     "bold": false
                 }
+                ,
+                {
+                    "text": "\n\n感谢 WalkMan467 对的性能优化做出的贡献",
+                    "color": "green",
+                    "bold": false
+                }
             ],
             "width": 400
         }
