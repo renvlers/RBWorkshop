@@ -195,7 +195,7 @@ execute \
 
 bossbar set builder_and_redstoner:current_turn visible false
 
-time set 0
+time set day
 weather clear
 
 execute as @a run attribute @s minecraft:attack_damage base set 1

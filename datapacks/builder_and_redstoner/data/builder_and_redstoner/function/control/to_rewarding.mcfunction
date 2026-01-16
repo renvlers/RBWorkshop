@@ -188,7 +188,7 @@ execute if score #active_teams temp matches 3.. run schedule function builder_an
 
 execute if score #active_teams temp matches 3.. run schedule function builder_and_redstoner:control/to_lobby 19s
 
-time set 0
+time set day
 weather clear
 
 execute \
