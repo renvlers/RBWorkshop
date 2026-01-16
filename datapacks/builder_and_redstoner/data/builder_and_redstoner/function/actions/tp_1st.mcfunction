@@ -1,4 +1,4 @@
-tp @s 46 66 6 -90 0
+tp @s 46 65 6 -90 0
 
 item replace entity @s armor.head with golden_helmet[item_name={ text: "【红建工坊】金头盔", color: "#FAFC75", bold: true }, enchantments={binding_curse: 1}, tooltip_display={hide_tooltip: true}, enchantment_glint_override=false]
 item replace entity @s armor.chest with golden_chestplate[item_name={ text: "【红建工坊】金胸甲", color: "#FAFC75", bold: true }, enchantments={binding_curse: 1}, tooltip_display={hide_tooltip: true}, enchantment_glint_override=false]
