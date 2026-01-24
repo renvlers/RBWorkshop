@@ -2859,5 +2859,17 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pink_dye_from_pink_petals": {
+    "criteria": {
+      "has_pink_petals": "2026-01-24 19:33:08 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_wildflowers": {
+    "criteria": {
+      "has_wildflowers": "2026-01-24 19:33:09 +0800"
+    },
+    "done": true
+  },
   "DataVersion": 4671
 }
